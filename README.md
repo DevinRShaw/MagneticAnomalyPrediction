@@ -59,7 +59,7 @@ boundary_boxes = [
 ]
 ```
 
-
+#### Functions for Filtering on Boundary Boxes 
 ```
 # Function to check if a point is within any boundary box
 def is_within_boundary_box(coords, box):
