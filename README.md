@@ -20,7 +20,7 @@ Information on data files and sources is in metadata.txt
 ## Modeling 
 
 ### Train/Test Grid Selection 
-Grid selection notebook in prediction_evaluation/grid_selection.ipynb. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. 
+Grid selection notebook in prediction_evaluation/grid_selection.ipynb. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
 
 #### Benchmark Boundary Boxes 
 
@@ -83,5 +83,22 @@ def filter_by_boundary_boxes(df, boundary_boxes):
     filtered_df = df[df.swifter.apply(lambda row: is_within_boundary_boxes((row['Longitude'], row['Latitude']), boundary_boxes), axis=1)]
     return filtered_df
 ```
+
+
+
+### Model Training 
+
+#### Predictors 
+cm_curie_point_depth    312247
+wgm2012_freeair_ponc    356911
+gl_elevation            356911
+rayleigh_group          356911
+sc_crust_den            356911
+interpolated_bouguer    356911
+igrf_dec                356911
+love_phase              356911
+gl_tot_sed_thick        356911
+
+
 
 
