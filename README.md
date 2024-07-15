@@ -14,3 +14,6 @@ This project aims to predict magnetic anomaly grids using geophysical predictor 
 
 
 ## Data
+
+![MagneticAnomalyPredictionDataSourcesDiagram drawio](https://github.com/user-attachments/assets/8c846acf-3f35-42ca-839c-2bb0bdeea74a)
+
