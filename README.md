@@ -57,10 +57,10 @@ boundary_boxes = [
     # Greenland: (latitude range: 60N to 84N, longitude range: 20W to 75W)
     (60, -75, 84, -20)      # Box 10: from (60N, 75W) to (84N, 20W)
 ]
+```
 
 
-
-
+```
 # Function to check if a point is within any boundary box
 def is_within_boundary_box(coords, box):
     min_longitude, min_latitude, max_longitude, max_latitude = box
