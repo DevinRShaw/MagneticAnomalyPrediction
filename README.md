@@ -259,6 +259,10 @@ To test the performance of the model on data from outside of the boundary boxes 
 ![download](https://github.com/user-attachments/assets/4367b390-2c45-4ace-b424-afbef582c933)
 ![download](https://github.com/user-attachments/assets/799b8c34-4592-4203-9aa5-c7345491acfd)
 
+In this comparison, the general "shape" of some areas is captured while other parts are much less accurate than on the in-training box results. This indicates that the spatial aspect of this data is important to prediction.
+
+Spatial Heterogeneity = Different regions can have unique environmental characteristics, such as climate, soil type, vegetation, and topography. A model trained on data from one region may not capture the nuances of a different region.
+
 
 ## Results 
 
