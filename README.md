@@ -20,7 +20,7 @@ Information on data files and sources is in metadata.txt
 ## Modeling 
 
 ### Train/Test Grid Selection 
-Grid selection notebook in prediction_evaluation/grid_selection.ipynb. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
+Grid selection notebook in ```prediction_evaluation/grid_selection.ipynb```. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
 
 #### Benchmark Boundary Boxes 
 
@@ -86,25 +86,32 @@ def filter_by_boundary_boxes(df, boundary_boxes):
 
 ### Model Training 
 
-#### Predictors 
-cm_curie_point_depth    312247
+#### Predictors Trained 
+Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor explains the variance in the model. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. 
 
-wgm2012_freeair_ponc    356911
-
-gl_elevation            356911
-
-rayleigh_group          356911
-
-sc_crust_den            356911
-
-interpolated_bouguer    356911
-
-igrf_dec                356911
-
-love_phase              356911
-
-gl_tot_sed_thick        356911
+* cm_curie_point_depth   
+* wgm2012_freeair_ponc   
+* gl_elevation           
+* rayleigh_group        
+* sc_crust_den         
+* interpolated_bouguer   
+* igrf_dec             
+* love_phase            
+* gl_tot_sed_thick     
 
 
+# Example Table
+
+| Predictor | F-score | 
+|----------|----------|
+| cm_curie_point_depth | Row 1, Col 2 |
+| wgm2012_freeair_ponc | Row 2, Col 2 | 
+| gl_elevation | Row 3, Col 2 | 
+| rayleigh_group   | Row 1, Col 2 |
+| sc_crust_den    | Row 2, Col 2 | 
+| interpolated_bouguer    | Row 3, Col 2 |
+| igrf_dec                | Row 1, Col 2 |
+| love_phase  | Row 2, Col 2 | 
+| gl_tot_sed_thick     | Row 3, Col 2 |
 
 
