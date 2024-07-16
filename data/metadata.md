@@ -19,7 +19,7 @@ The initial approach of this project follows this paper and many predictors used
   
 ### International Gravimetric Bureau (BGI)
 * Bouguer Gravity Anomaly
-  - [link to data]([https://www.ncei.noaa.gov/products/earth-magnetic-model-anomaly-grid-2](https://bgi.obs-mip.fr/catalogue/?uuid=df2dab2d-a826-4776-b49f-61e8b284c409))
+  - [link to data](https://bgi.obs-mip.fr/catalogue/?uuid=df2dab2d-a826-4776-b49f-61e8b284c409)
   - `interpolated_bouguer_from_csv.nc` converted to csv then interpolated to new resolution CSV via {insert outside software here}
 
 ## Standardized Data
