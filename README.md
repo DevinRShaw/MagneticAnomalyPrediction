@@ -214,11 +214,11 @@ y_pred = rf_model.predict(X_test)
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             |  4416.054554126633       |
-| R<sup>2</sup> Score                  | 0.8231592929315783      |
-| Root Mean Squared Error (RMSE)       | 66.45340137364401      |
-| Mean Absolute Error (MAE)            | 45.44021834728198      |
-| Coefficient of Variation of RMSE     | 0.4205243239913972      |
+| Mean Squared Error (MSE)             |  4095.628213246405       |
+| R<sup>2</sup> Score                  | 0.8375606267004251      |
+| Root Mean Squared Error (RMSE)       | 63.99709535007354      |
+| Mean Absolute Error (MAE)            | 43.4922085321828     |
+| Coefficient of Variation of RMSE     | 0.40303768223278447      |
 
 **red line = line of perfect matching scores**
 
@@ -244,7 +244,7 @@ y_pred = rf_model.predict(X_test)
 When we increased the sample size of our test/train split there is an expected increase in performance measured by R<sup>2</sup> Score, which is to be expected in a data science / machine learning setting. Both models underestimate values in the upper percentiles of their distributions. This may be important in a geophysical or a statistical aspect. The larger benchmark has much larger upper values than the 1 box benchmark.
 
 ### Testing Outside Training Box Performance
-To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted,(y_pred values), for the 1 box dataset values, (y_test values). 
+To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted for the 1 box dataset values,. 
 
 
 | Metric                               | Value                   |
