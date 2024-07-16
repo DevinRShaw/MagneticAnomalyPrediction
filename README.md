@@ -187,18 +187,29 @@ y_pred = rf_model.predict(X_test)
 
 ## Evaluation 
 
-### Metrics
+### Metrics 
+#### 1 Box Benchmark Metrics
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
 | Mean Squared Error (MSE)             | 1570.834555212438       |
 | R<sup>2</sup> Score                  | 0.8477694942863158      |
-| Root Mean Squared Error (RMSE)       | 39.633755249943675       |
-| Mean Absolute Error (MAE)            | 18.503679782716006        |
+| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
+| Mean Absolute Error (MAE)            | 18.503679782716006      |
+| Coefficient of Variation of RMSE     | 0.3901672791427854      |
+
+#### 10 Box Benchmark Metrics
+
+| Metric                               | Value                   |
+|--------------------------------------|-------------------------|
+| Mean Squared Error (MSE)             | 1570.834555212438       |
+| R<sup>2</sup> Score                  | 0.8477694942863158      |
+| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
+| Mean Absolute Error (MAE)            | 18.503679782716006      |
 | Coefficient of Variation of RMSE     | 0.3901672791427854      |
 
 
-### Explanation of Metrics
+#### Explanation of Metrics
 
 - **Mean Squared Error (MSE)**: This metric measures the average squared difference between the predicted values and the actual values. It is useful for understanding the overall performance of the model. A lower MSE indicates better model performance.
 
