@@ -98,7 +98,7 @@ boundary_boxes = [
 ```
 
 #### Functions for Filtering on Boundary Boxes 
-```
+```python
 # Function to check if a point is within any boundary box
 def is_within_boundary_box(coords, box):
     min_longitude, min_latitude, max_longitude, max_latitude = box
