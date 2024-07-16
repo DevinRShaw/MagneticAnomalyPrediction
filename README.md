@@ -239,6 +239,13 @@ When we increased the sample size of our test/train split there is an expected i
 To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted,(y_pred values), for the 1 box dataset values, (y_test values). 
 
 
+| Metric                               | Value                   |
+|--------------------------------------|-------------------------|
+| Mean Squared Error (MSE)             | 1570.834555212438       |
+| R<sup>2</sup> Score                  | 0.8477694942863158      |
+| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
+| Mean Absolute Error (MAE)            | 18.503679782716006      |
+| Coefficient of Variation of RMSE     | 0.3901672791427854      |
 
 
 ![download](https://github.com/user-attachments/assets/4367b390-2c45-4ace-b424-afbef582c933)
