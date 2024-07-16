@@ -198,6 +198,8 @@ y_pred = rf_model.predict(X_test)
 | Mean Absolute Error (MAE)            | 45.44021834728198      |
 | Coefficient of Variation of RMSE     | 0.4205243239913972      |
 
+![download](https://github.com/user-attachments/assets/1baf5af3-51dd-45e9-873f-00a91bcbc1aa)
+
 #### 10 Box Benchmark Metrics
 
 | Metric                               | Value                   |
