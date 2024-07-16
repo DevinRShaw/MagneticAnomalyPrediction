@@ -23,10 +23,10 @@ The initial approach of this project follows this paper and many predictors used
   - `interpolated_bouguer_from_csv.nc` converted to csv then interpolated to new resolution CSV via {insert outside software here}
 
  
-### Magnetic Declination/Inclination Source
+### Magnetic Declination/Inclination, EMM, MF7 Sources
 * Magnetic Declination/Inclination 
   - [link to data](https://bgi.obs-mip.fr/catalogue/?uuid=df2dab2d-a826-4776-b49f-61e8b284c409)
-  - `igrf_D.nc` and `igrf_I.nc` converted to an .nc file via {insert method used here}
+  - `igrf_dec.nc` and `igrf_inc.nc` converted to an .nc file via {insert method used here}
 
 ## Standardized Data
 - Archive Name: `standardized_data.zip`
