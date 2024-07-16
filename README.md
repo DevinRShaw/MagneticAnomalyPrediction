@@ -84,19 +84,25 @@ def filter_by_boundary_boxes(df, boundary_boxes):
     return filtered_df
 ```
 
-
-
 ### Model Training 
 
 #### Predictors 
 cm_curie_point_depth    312247
+
 wgm2012_freeair_ponc    356911
+
 gl_elevation            356911
+
 rayleigh_group          356911
+
 sc_crust_den            356911
+
 interpolated_bouguer    356911
+
 igrf_dec                356911
+
 love_phase              356911
+
 gl_tot_sed_thick        356911
 
 
