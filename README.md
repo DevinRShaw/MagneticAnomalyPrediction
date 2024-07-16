@@ -248,6 +248,10 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 ![image](https://github.com/user-attachments/assets/d9b7a0e8-82f4-417e-8978-e3bc17cba7db)
 
 
-### Magnetic Anomaly Prediction Best Scores
+### Magnetic Anomaly Prediction Large Benchmark Scores 
+
+
+
+## Future Work
 
 
