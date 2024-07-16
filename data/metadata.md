@@ -6,9 +6,9 @@ Description: Data contains global geophysical variables and corresponding magnet
 
 ## Original Data Sources
 ### National Oceanic and Atmospheric Administration (NOAA)
-* file 1
-* file 2
-* file 3
+* Earth Magnetic Anomaly Grid (EMAG2 v3, Meyer et al., 2017, 2 arc-minute equiangular grid) [link](https://www.ncei.noaa.gov/products/earth-magnetic-model-anomaly-grid-2)
+* 
+
 
 
 
