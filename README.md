@@ -252,5 +252,11 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 
 
 # Future Work
+There are many potential methods of improving the performance of random forest regression on magnetic anomaly values. 
+
+## Feature Importance Analysis
+Identifying the best performing feature combination will increase model explainability and is most likely the simpliest approach. 
+
+
 
 
