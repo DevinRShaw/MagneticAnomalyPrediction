@@ -134,8 +134,29 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 * love_phase            
 * gl_tot_sed_thick     
 
-##Evaluation 
+## Evaluation 
+
+### Metrics
+
+| Metric                               | Value                   |
+|--------------------------------------|-------------------------|
+| Mean Squared Error (MSE)             | 4095.628213246405       |
+| R<sup>2</sup> Score                  | 0.8375606267004251      |
+| Root Mean Squared Error (RMSE)       | 63.99709535007354       |
+| Mean Absolute Error (MAE)            | 43.4922085321828        |
+| Coefficient of Variation of RMSE     | 0.40303768223278447     |
 
 
+### Explanation of Metrics
+
+- **Mean Squared Error (MSE)**: This metric measures the average squared difference between the predicted values and the actual values. It is useful for understanding the overall performance of the model. A lower MSE indicates better model performance.
+
+- **R<sup>2</sup> Score**: Also known as the coefficient of determination, this metric indicates how well the model's predictions fit the actual data. It ranges from 0 to 1, with values closer to 1 indicating a better fit. An R<sup>2</sup> score of 0.8375606267004251 means that approximately 83.76% of the variance in the target variable is explained by the model.
+
+- **Root Mean Squared Error (RMSE)**: This is the square root of the Mean Squared Error and provides a measure of the average magnitude of the prediction errors. RMSE is in the same units as the target variable, making it easier to interpret. A lower RMSE indicates better model performance.
+
+- **Mean Absolute Error (MAE)**: This metric measures the average absolute difference between the predicted values and the actual values. Like RMSE, MAE provides a measure of the average magnitude of the errors, but it is less sensitive to large errors. A lower MAE indicates better model performance.
+
+- **Coefficient of Variation of RMSE (CVRMSE)**: This metric is the RMSE divided by the mean of the observed data, expressed as a percentage. It provides a normalized measure of the prediction error, allowing for comparison across different datasets. A lower CVRMSE indicates better model performance.
 
 
