@@ -15,10 +15,12 @@ The initial approach of this project follows this paper and many predictors used
 ### National Oceanic and Atmospheric Administration (NOAA)
 * Earth Magnetic Anomaly Grid (EMAG2 v3, Meyer et al., 2017, 2 arc-minute equiangular grid)
   - [link to data](https://www.ncei.noaa.gov/products/earth-magnetic-model-anomaly-grid-2)
-  - `interpolated_emag_from_csv.nc` -> `EMAG2v3onPredictorMesh.csv` via {insert outside software here} 
+  - `EMAG2v3onPredictorMesh.csv` or `interpolated_emag_from_csv.nc` converted to csv then interpolated to new resolution CSV via {insert outside software here}
+  
 ### International Gravimetric Bureau (BGI)
-* Bou
-
+* Bouguer Gravity Anomaly
+  - [link to data]([https://www.ncei.noaa.gov/products/earth-magnetic-model-anomaly-grid-2](https://bgi.obs-mip.fr/catalogue/?uuid=df2dab2d-a826-4776-b49f-61e8b284c409))
+  - `interpolated_bouguer_from_csv.nc` converted to csv then interpolated to new resolution CSV via {insert outside software here}
 
 ## Standardized Data
 - Archive Name: `standardized_data.zip`
