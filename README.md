@@ -122,7 +122,7 @@ def filter_by_boundary_boxes(df, boundary_boxes):
 ### Feature Selection 
 
 #### Predictors Trained 
-Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor explains the variance in the model. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate description of predictors that yielded best test}
+Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate description of predictors that yielded best test}
 
 * cm_curie_point_depth   
 * wgm2012_freeair_ponc   
@@ -134,6 +134,7 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 * love_phase            
 * gl_tot_sed_thick     
 
+##Evaluation 
 
 
 
