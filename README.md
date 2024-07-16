@@ -16,12 +16,12 @@ This project aims to predict magnetic anomaly grids using geophysical predictor 
 
 ## Data
 Information on data files and sources is in metadata.txt 
-![MagneticAnomalyPredictionDataSourcesDiagram drawio](https://github.com/user-attachments/assets/8c846acf-3f35-42ca-839c-2bb0bdeea74a)
 
 
 ## Ranking 
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor explains the variance in the model.
-![Screenshot (229)](https://github.com/user-attachments/assets/84ac6f3b-8cd6-48a9-858c-163ae927176c)
+![Uploading image.png…]()
+
 
 {Make sure to fill out this table later}
 | Predictor | F-score | 
