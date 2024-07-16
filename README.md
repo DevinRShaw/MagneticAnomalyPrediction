@@ -11,7 +11,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Data](#data)
 - [Feature Ranking](#ranking)
 - [Benchmark Datasets](#benchmarks)
-- [Evaluation](#evaluation)
+- [Model Evaluation](#evaluation)
 - [Notebooks](#notebooks)
 - [License](#license)
 
