@@ -43,6 +43,19 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 ### Train/Test Grid Selection 
 Grid selection notebook in ```prediction_evaluation/grid_selection.ipynb```. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
 
+#### Benchmark CSV Format 
+A row = sample, column = feature format allows for train/test data to be moved to the benchmark notebook. ```prediction_evaluation/random_forest_benchmark``` in one package and simplifies input to the model via pandas/Numpy compatibility.
+
+| Latitude       | Longitude      | Target         | Predictor 1     | Predictor 2     | ...  | Predictor n     |
+|----------------|----------------|----------------|-----------------|-----------------|------|-----------------|
+| Sample 1, Latitude | Sample 1, Longitude | Sample 1, Target | Sample 1, Predictor 1 | Sample 1, Predictor 2 | ...  | Sample 1, Predictor n |
+| Sample 2, Latitude | Sample 2, Longitude | Sample 2, Target | Sample 2, Predictor 1 | Sample 2, Predictor 2 | ...  | Sample 2, Predictor n |
+| Sample 3, Latitude | Sample 3, Longitude | Sample 3, Target | Sample 3, Predictor 1 | Sample 3, Predictor 2 | ...  | Sample 3, Predictor n |
+| ...            | ...            | ...            | ...             | ...             | ...  | ...             |
+| Sample n, Latitude | Sample n, Longitude | Sample n, Target | Sample n, Predictor 1 | Sample n, Predictor 2 | ...  | Sample n, Predictor n |
+
+
+
 #### Benchmark Boundary Boxes 
 
 ```python
