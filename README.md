@@ -262,4 +262,6 @@ To test the performance of the model on data from outside of the boundary boxes 
 
 ## Results 
 
+Due to the similarity in predictors and domain of research, an initial goal of this project was to see if we could exceed the R<sup>2</sup> score acheived by the research paper that we modeled our approach after. 
+
 
