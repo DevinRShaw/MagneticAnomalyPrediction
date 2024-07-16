@@ -8,7 +8,7 @@ This project aims to predict magnetic anomaly grids using geophysical predictor 
 
 - [Data](#data)
 - [Feature Ranking](#ranking)
-- [Benchmark Dataset](#benchmarkdataset)
+- [Benchmark Dataset](#benchmark)
 - [Evaluation](#evaluation)
 - [Next Steps](#Next)
 - [License](#license)
