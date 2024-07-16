@@ -21,6 +21,7 @@ The majority of geophysical predictor data is sourced from paper on in-situ heat
 
 Additional information on data and sources is in ```metadata.txt```.
 
+![MagneticAnomalyPredictionDataSourcesDiagram drawio](https://github.com/user-attachments/assets/516e3514-fe0f-4342-8677-622cec3e23c0)
 
 ## Ranking 
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor explains the variance in the model.
