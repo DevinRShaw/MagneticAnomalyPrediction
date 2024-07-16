@@ -242,14 +242,14 @@ Spatial Heterogeneity = Different regions can have unique environmental characte
 
 Due to the similarity in predictors and domain of research, an initial goal of this project was to exceed the R<sup>2</sup> score acheived by the research paper that we modeled our approach after. 
 
-### In-Situ Heat Flow Prediction Algorithms' Best Scores 
+## In-Situ Heat Flow Prediction Algorithms' Best Scores 
 ![image](https://github.com/user-attachments/assets/d9b7a0e8-82f4-417e-8978-e3bc17cba7db)
 
 
-### Magnetic Anomaly Prediction Large Benchmark Scores 
+## Magnetic Anomaly Prediction Large Benchmark Scores 
 
 
 
-## Future Work
+# Future Work
 
 
