@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to predict magnetic anomaly grids using geophysical predictor grids. This is a crucial component of the MagNav project, which develops military-grade navigation algorithms via magnetic navigation. Due to the lack of quality magnetic data, we leverage machine learning to enhance the accuracy of magnetic anomaly predictions. 
+    This project aims to predict magnetic anomaly grids using geophysical predictor grids. This is a crucial component of the MagNav project, which develops military-grade navigation algorithms via magnetic navigation. Due to the lack of quality magnetic data, we leverage machine learning to enhance the accuracy of magnetic anomaly predictions. 
 
 A random forest regressor is the inital model used to assess the performance of machine learning in the domain of geophysics. Random forest is simple in applcation, resistant to overfitting and provides model explainability, such as built in feature importance analysis. The end objective is to improve magnetic map data for use in magnetic navigation algorithms.
 
@@ -17,7 +17,7 @@ A random forest regressor is the inital model used to assess the performance of 
 
 
 ## Data
-Majority of geophysical predictor data sourced from paper on in-situ heatflow prediction {insert reference here}. Other predictors are sourced from geological agencies and then adjusted to match the formatting of research paper data, which is in .nc file format at 100 km<sup>2</sup> resolution {add details about equal area grid}. Notebooks used for standardizing datasets outside of the followed research paper are in the ```feature_creation/file_conversion/``` folder. 
+The majority of geophysical predictor data sourced from paper on in-situ heatflow prediction {insert reference here}. Other predictors are sourced from geological agencies and then adjusted to match the formatting of research paper data, which is in .nc file format at 100 km<sup>2</sup> resolution {add details about equal area grid}. Notebooks used for standardizing datasets outside of the followed research paper are in the ```feature_creation/file_conversion/``` folder. 
 
 Additional information on data files and sources is in ```metadata.txt```.
 
