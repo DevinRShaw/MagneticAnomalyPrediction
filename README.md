@@ -10,7 +10,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Feature Ranking](#ranking)
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
-- [Results](#results)
+- [Conclusions](#conclusions)
 - [Future Work](#future)
 
 
@@ -238,7 +238,7 @@ In this comparison, the general "shape" of some areas is captured while other pa
 Spatial Heterogeneity = Different regions can have unique environmental characteristics, such as climate, soil type, vegetation, and topography. A model trained on data from one region may not capture the nuances of a different region.
 
 
-# Results 
+# Conclusions  
 
 Due to the similarity in predictors and domain of research, an initial goal of this project was to exceed the R<sup>2</sup> score acheived by the research paper that we modeled our approach after. Although we were not able to train on our entire target dataset, the 10 box benchmark performed very well in terms of comparison to the paper. 
 
