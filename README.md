@@ -145,6 +145,8 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 
 
 ## Model Training 
+
+A random forest regressor was trained on data with normalized features and median missing value imputation.
 ```python
 # Columns to exclude
 exclude_columns = ['Longitude', 'Latitude', 'EMAG2v3']
@@ -174,7 +176,6 @@ rf_model.fit(X_train, y_train)
 
 # Predict on test data
 y_pred = rf_model.predict(X_test)
-
 ```
 
 
@@ -203,4 +204,6 @@ y_pred = rf_model.predict(X_test)
 
 - **Coefficient of Variation of RMSE (CVRMSE)**: This metric is the RMSE divided by the mean of the observed data, expressed as a percentage. It provides a normalized measure of the prediction error, allowing for comparison across different datasets. A lower CVRMSE indicates better model performance.
 
+
+### 
 
