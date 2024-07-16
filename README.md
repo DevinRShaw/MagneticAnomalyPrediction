@@ -268,13 +268,8 @@ Spatial Heterogeneity = Different regions can have unique environmental characte
 
 Due to the similarity in predictors and domain of research, an initial goal of this project was to exceed the R<sup>2</sup> score acheived by the research paper that we modeled our approach after. 
 
-### In-Situ Heat Flow Prediction Best Scores 
-| Metric                               | Value                   |
-|--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 1570.834555212438       |
-| R<sup>2</sup> Score                  | 0.8477694942863158      |
-| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
-| Mean Absolute Error (MAE)            | 18.503679782716006      |
-| Coefficient of Variation of RMSE     | 0.3901672791427854      |
+### In-Situ Heat Flow Prediction Algorithms' Best Scores 
+![image](https://github.com/user-attachments/assets/d9b7a0e8-82f4-417e-8978-e3bc17cba7db)
+
 
 
