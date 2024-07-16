@@ -20,7 +20,8 @@ Information on data files and sources is in metadata.txt
 
 ## Ranking 
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor explains the variance in the model.
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/f344e73e-ef2b-4c36-81df-1cf90d0b771e)
+
 
 
 {Make sure to fill out this table later}
