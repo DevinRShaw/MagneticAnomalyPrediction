@@ -16,7 +16,8 @@ The initial approach of this project follows this paper and many predictors used
 * Earth Magnetic Anomaly Grid (EMAG2 v3, Meyer et al., 2017, 2 arc-minute equiangular grid)
   - [link to data](https://www.ncei.noaa.gov/products/earth-magnetic-model-anomaly-grid-2)
   - `interpolated_emag_from_csv.nc` -> `EMAG2v3onPredictorMesh.csv` via {insert outside software here} 
-* 
+### International Gravimetric Bureau (BGI)
+* Bou
 
 
 ## Standardized Data
@@ -29,4 +30,5 @@ File standardization involves renaming all files to intuitive naming and formatt
 ## Usage Notes
 - The original data should be used for reference and comparison purposes.
 - The standardized data is recommended for use in machine learning tasks due to its consistent format and normalization.
+
 
