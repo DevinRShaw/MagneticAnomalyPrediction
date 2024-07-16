@@ -2,7 +2,7 @@
 
 ## Dataset Overview
 Title: Magnetic Anomaly Prediction Dataset
-Description: This dataset contains global geophysical variables and corresponding magnetic anomaly values used for predicting magnetic anomalies as part of the MagNav project. The dataset is divided into original and standardized versions, with each file containing one predictor variable.
+Description: Data contains global geophysical variables and corresponding magnetic anomaly values used for predicting magnetic anomalies as part of the MagNav project. The data is divided into original and standardized versions, with each file containing one predictor variable.
 
 ## Data Sources
 - National Oceanic and Atmospheric Administration (NOAA)
