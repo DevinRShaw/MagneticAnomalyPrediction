@@ -39,7 +39,7 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 | gl_tot_sed_thick     | Row 3, Col 2 |
 
 
-## Benchmark Dataset  
+## Benchmark 
 Selecting for train/test data on boundary boxes and for select features, a dataset of size 356911 samples is created for input to the model. 
 
 ### Train/Test Grid Selection 
