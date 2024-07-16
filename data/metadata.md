@@ -9,7 +9,7 @@ Benchmark datasets are csv files created from the data in files for input to the
 - Archive Name: `original_data.zip`
 
 ### [Predicting Marine In Situ Heat Flow Using a Geospatial Machine Learning Conformal Prediction](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GC010913)
-The initial approach of this project follows this paper and many predictors used in model are sourced from the paper.
+The initial approach of this project follows this paper and many predictors used in model are sourced from the paper's supplementary data.
 * Multiple predictors all of which are .nc files of 10 x 10 km resolution
   - [link to data](https://figshare.com/articles/dataset/Data_and_supplemental_material_for_Predicting_marine_in-situ_heat_flow_using_a_geospatial_machine_learning_conformal_prediction_/22104830)
 ### National Oceanic and Atmospheric Administration (NOAA)
@@ -21,6 +21,12 @@ The initial approach of this project follows this paper and many predictors used
 * Bouguer Gravity Anomaly
   - [link to data](https://bgi.obs-mip.fr/catalogue/?uuid=df2dab2d-a826-4776-b49f-61e8b284c409)
   - `interpolated_bouguer_from_csv.nc` converted to csv then interpolated to new resolution CSV via {insert outside software here}
+
+ 
+### Magnetic Declination/Inclination Source
+* Magnetic Declination/Inclination 
+  - [link to data](https://bgi.obs-mip.fr/catalogue/?uuid=df2dab2d-a826-4776-b49f-61e8b284c409)
+  - `igrf_D.nc` and `igrf_I.nc` converted to an .nc file via {insert method used here}
 
 ## Standardized Data
 - Archive Name: `standardized_data.zip`
