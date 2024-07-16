@@ -233,4 +233,4 @@ y_pred = rf_model.predict(X_test)
 
 ### Interpretation of Benchmark Performance
 
-When we increased the sample size of our test/train split there is an expected increase in performance measured by R<sup>2</sup> Score, which is to be expected in a data science / machine learning setting. The 
+When we increased the sample size of our test/train split there is an expected increase in performance measured by R<sup>2</sup> Score, which is to be expected in a data science / machine learning setting. Both models underestimate values in the upper percentiles of their distributions. This may be important in a geophysical or a statistical aspect. 
