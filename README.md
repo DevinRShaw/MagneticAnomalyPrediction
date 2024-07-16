@@ -17,7 +17,7 @@ This project aims to predict magnetic anomaly grids using geophysical predictor 
 ## Data
 Majority of geophysical predictor data sourced from paper on in-situ heatflow prediction {insert reference here}. Other predictors are sourced from geological agencies and then adjusted to match the formatting of research paper data, which is in .nc file format at 100 km<sup>2</sup> resolution.
 
-Additional information on data files and sources is in metadata.txt 
+Additional information on data files and sources is in ```metadata.txt```.
 
 
 ## Ranking 
