@@ -259,13 +259,22 @@ To test the performance of the model on data from outside of the boundary boxes 
 ![download](https://github.com/user-attachments/assets/4367b390-2c45-4ace-b424-afbef582c933)
 ![download](https://github.com/user-attachments/assets/799b8c34-4592-4203-9aa5-c7345491acfd)
 
-In this comparison, the general "shape" of some areas is captured while other parts are much less accurate than on the in-training box results. This indicates that the spatial aspect of this data is important to prediction.
+In this comparison, the general "shape" of some areas is captured while other parts are much less accurate than on the in-training box results. This indicates that the spatial aspect of this data is important to prediction. More analysis on which datapoints the model performs worse on is needed.
 
 Spatial Heterogeneity = Different regions can have unique environmental characteristics, such as climate, soil type, vegetation, and topography. A model trained on data from one region may not capture the nuances of a different region.
 
 
 ## Results 
 
-Due to the similarity in predictors and domain of research, an initial goal of this project was to see if we could exceed the R<sup>2</sup> score acheived by the research paper that we modeled our approach after. 
+Due to the similarity in predictors and domain of research, an initial goal of this project was to exceed the R<sup>2</sup> score acheived by the research paper that we modeled our approach after. 
+
+### In-Situ Heat Flow Prediction Best Scores 
+| Metric                               | Value                   |
+|--------------------------------------|-------------------------|
+| Mean Squared Error (MSE)             | 1570.834555212438       |
+| R<sup>2</sup> Score                  | 0.8477694942863158      |
+| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
+| Mean Absolute Error (MAE)            | 18.503679782716006      |
+| Coefficient of Variation of RMSE     | 0.3901672791427854      |
 
 
