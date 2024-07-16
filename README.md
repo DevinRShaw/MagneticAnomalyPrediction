@@ -60,7 +60,7 @@ A row = sample, column = feature format allows for train/test data to be moved t
 
 
 #### Small Benchmark Boundary Box
-Both use list of tuples due to ```filter_by_boundary_boxes(df, boundary_boxes)``` using a list of tuples for boundary boxes.
+Both boundary box sets are defined as list of tuples becuase```filter_by_boundary_boxes(df, boundary_boxes)``` using a list of tuples for boundary boxes.
 ```python
 boundary_box = [(-115,33,-83,43)]
 ```
