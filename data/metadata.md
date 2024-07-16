@@ -1,4 +1,4 @@
-# Metadata for Magnetic Anomaly Prediction Dataset
+# Metadata for Magnetic Anomaly Prediction Data
 
 ## Dataset Overview
 Title: Magnetic Anomaly Prediction Dataset
@@ -8,6 +8,7 @@ Description: Data contains global geophysical variables and corresponding magnet
 - Archive Name: `original_data.zip`
 ### National Oceanic and Atmospheric Administration (NOAA)
 * Earth Magnetic Anomaly Grid (EMAG2 v3, Meyer et al., 2017, 2 arc-minute equiangular grid) [link](https://www.ncei.noaa.gov/products/earth-magnetic-model-anomaly-grid-2)
+** herhe
 * 
 
 
@@ -15,6 +16,8 @@ Description: Data contains global geophysical variables and corresponding magnet
 ## Standardized Data
 - Archive Name: `standardized_data.zip`
 File standardization involves renaming all files to intuitive naming and formatted .nc files to have same xarray metadata and variable naming. This makes the data easier to use for future work.
+
+## Benchmark Data
 
 ## Usage Notes
 - The original data should be used for reference and comparison purposes.
