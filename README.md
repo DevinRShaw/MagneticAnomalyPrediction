@@ -133,30 +133,6 @@ boundary_boxes = [
 ]
 ```
 
-#### Functions for Filtering on Boundary Boxes 
-```python
-# Function to check if a point is within any boundary box
-def is_within_boundary_box(coords, box):
-    min_longitude, min_latitude, max_longitude, max_latitude = box
-    if (min_longitude < coords[0] < max_longitude and min_latitude < coords[1] < max_latitude):
-      return True
-
-    return False
-
-
-# Function to check if a point is within any boundary box
-def is_within_boundary_boxes(coords, boundary_boxes):
-    for box in boundary_boxes:
-        min_longitude, min_latitude, max_longitude, max_latitude = box
-        if is_within_boundary_box(coords, box):
-            return True
-    return False
-
-# Function to filter DataFrame based on boundary boxes
-def filter_by_boundary_boxes(df, boundary_boxes):
-    filtered_df = df[df.swifter.apply(lambda row: is_within_boundary_boxes((row['Longitude'], row['Latitude']), boundary_boxes), axis=1)]
-    return filtered_df
-```
 
 ## Model Training 
 
