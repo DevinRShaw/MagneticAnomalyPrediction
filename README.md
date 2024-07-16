@@ -23,7 +23,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 *    Notebooks used for standardizing datasets outside of the followed research paper are in the ```feature_creation/file_conversion/``` folder.
 
   
-  Additional information on data and sources is in ```metadata.txt```.
+  Additional information on data and sources is in ```data/metadata.MD```.
 
 ![MagneticAnomalyPredictionDataSourcesDiagram drawio](https://github.com/user-attachments/assets/9dadd186-dd41-44b4-924c-2f351adc67c3)
 
