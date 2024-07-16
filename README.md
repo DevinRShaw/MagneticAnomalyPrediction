@@ -44,7 +44,25 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 
 
 ## Benchmarks
-Selecting for train/test data on boundary boxes and for select features. A small dataset of size ({} samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The smaller dataset is used to measure how much sample size improves model performance. 
+Selecting for train/test data for chosen features and boundary boxes. A small dataset of size (36297 samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The smaller dataset is used to measure how much sample size improves model performance. The model was not trained on the entire globe mainly due to time to train taking too long for project time constraint.
+
+
+### Feature Selection 
+
+#### Predictors Trained On
+Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate k of kth best predictors that yielded best test}
+
+* cm_curie_point_depth   
+* wgm2012_freeair_ponc   
+* gl_elevation           
+* rayleigh_group        
+* sc_crust_den         
+* interpolated_bouguer   
+* igrf_dec             
+* love_phase            
+* gl_tot_sed_thick     
+
+
 
 ### Train/Test Grid Selection 
 Grid selection notebook in ```prediction_evaluation/grid_selection.ipynb```. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
@@ -128,23 +146,6 @@ def filter_by_boundary_boxes(df, boundary_boxes):
     filtered_df = df[df.swifter.apply(lambda row: is_within_boundary_boxes((row['Longitude'], row['Latitude']), boundary_boxes), axis=1)]
     return filtered_df
 ```
-
-### Feature Selection 
-
-#### Predictors Trained On
-Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate k of kth best predictors that yielded best test}
-
-* cm_curie_point_depth   
-* wgm2012_freeair_ponc   
-* gl_elevation           
-* rayleigh_group        
-* sc_crust_den         
-* interpolated_bouguer   
-* igrf_dec             
-* love_phase            
-* gl_tot_sed_thick     
-
-
 
 ## Model Training 
 
