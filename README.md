@@ -12,7 +12,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Feature Ranking](#ranking)
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
-- [Notebooks](#notebooks)
+- [Results](#results)
 - [License](#license)
 
 
@@ -258,4 +258,8 @@ To test the performance of the model on data from outside of the boundary boxes 
 
 ![download](https://github.com/user-attachments/assets/4367b390-2c45-4ace-b424-afbef582c933)
 ![download](https://github.com/user-attachments/assets/799b8c34-4592-4203-9aa5-c7345491acfd)
+
+
+## Results 
+
 
