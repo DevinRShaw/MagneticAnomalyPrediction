@@ -11,7 +11,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
 - [Conclusions](#conclusions)
-- [Future](#future)
+- [Future Work](#future)
 
 
 # Data
