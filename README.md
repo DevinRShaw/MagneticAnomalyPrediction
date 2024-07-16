@@ -235,5 +235,11 @@ y_pred = rf_model.predict(X_test)
 
 When we increased the sample size of our test/train split there is an expected increase in performance measured by R<sup>2</sup> Score, which is to be expected in a data science / machine learning setting. Both models underestimate values in the upper percentiles of their distributions. This may be important in a geophysical or a statistical aspect. The larger benchmark has much larger upper values than the 1 box benchmark.
 
-## Testing Outside Training Performance
-To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted for the 1 box dataset and was assessed. 
+### Testing Outside Training Box Performance
+To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted,(y_pred), for the 1 box dataset values, (y_test). 
+
+![image](https://github.com/user-attachments/assets/f5cca37f-4997-4d16-8c7e-213b7794a206)
+
+![image](https://github.com/user-attachments/assets/e29a07ca-04ab-41d2-9cd3-c95631380f3d)
+
+
