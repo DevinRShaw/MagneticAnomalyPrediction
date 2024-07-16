@@ -12,7 +12,7 @@ A random forest regressor is the inital model used to assess the performance of 
 - [Feature Ranking](#ranking)
 - [Benchmark Datasets](#benchmarks)
 - [Evaluation](#evaluation)
-- [Next Steps](#Next)
+- [Notebooks](#notebooks)
 - [License](#license)
 
 
@@ -192,11 +192,11 @@ y_pred = rf_model.predict(X_test)
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 1570.834555212438       |
-| R<sup>2</sup> Score                  | 0.8477694942863158      |
-| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
-| Mean Absolute Error (MAE)            | 18.503679782716006      |
-| Coefficient of Variation of RMSE     | 0.3901672791427854      |
+| Mean Squared Error (MSE)             |  4416.054554126633       |
+| R<sup>2</sup> Score                  | 0.8231592929315783      |
+| Root Mean Squared Error (RMSE)       | 66.45340137364401      |
+| Mean Absolute Error (MAE)            | 45.44021834728198      |
+| Coefficient of Variation of RMSE     | 0.4205243239913972      |
 
 #### 10 Box Benchmark Metrics
 
