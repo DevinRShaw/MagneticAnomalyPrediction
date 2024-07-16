@@ -11,7 +11,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
 - [Conclusions](#conclusions)
-- [Future Work](#future)
+- [Future Work](#future work)
 
 
 # Data
@@ -251,7 +251,7 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 
 
 
-# Future
+# Future Work
 There are many potential methods of improving the performance of random forest regression on magnetic anomaly values, given current state of model performance. 
 
 * Feature Importance Analysis
