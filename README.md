@@ -160,7 +160,7 @@ def filter_by_boundary_boxes(df, boundary_boxes):
 
 ## Model Training 
 
-A random forest regressor was trained on data with normalized features and median missing value imputation.
+A random forest regressor was trained on data with normalized features and median missing value imputation. The same training and hyperparameters were used for both benchmarks.
 ```python
 # Columns to exclude
 exclude_columns = ['Longitude', 'Latitude', 'EMAG2v3']
@@ -214,11 +214,11 @@ y_pred = rf_model.predict(X_test)
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             |  4095.628213246405       |
-| R<sup>2</sup> Score                  | 0.8375606267004251      |
-| Root Mean Squared Error (RMSE)       | 63.99709535007354      |
-| Mean Absolute Error (MAE)            | 43.4922085321828     |
-| Coefficient of Variation of RMSE     | 0.40303768223278447      |
+| Mean Squared Error (MSE)             |  3698.262507041346      |
+| R<sup>2</sup> Score                  | 0.8499673466604034      |
+| Root Mean Squared Error (RMSE)       | 60.813341521752825      |
+| Mean Absolute Error (MAE)            | 41.11493823797806       |
+| Coefficient of Variation of RMSE     | 0.3873404876069588      |
 
 **red line = line of perfect matching scores**
 
@@ -241,7 +241,7 @@ y_pred = rf_model.predict(X_test)
 
 ### Interpretation of Benchmark Performance
 
-When we increased the sample size of our test/train split there is an expected increase in performance measured by R<sup>2</sup> Score, which is to be expected in a data science / machine learning setting. Both models underestimate values in the upper percentiles of their distributions. This may be important in a geophysical or a statistical aspect. The larger benchmark has much larger upper values than the 1 box benchmark.
+When we increased the scope of our test/train split there is an expected increase in performance measured by R<sup>2</sup> Score, which is to be expected in a data science / machine learning setting. Both models underestimate values in the upper percentiles of their distributions. This may be important in a geophysical or a statistical aspect. The larger benchmark has much larger upper values than the 1 box benchmark.
 
 ### Testing Outside Training Box Performance
 To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted for the 1 box dataset values,. 
@@ -271,5 +271,7 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 ### In-Situ Heat Flow Prediction Algorithms' Best Scores 
 ![image](https://github.com/user-attachments/assets/d9b7a0e8-82f4-417e-8978-e3bc17cba7db)
 
+
+### Magnetic Anomaly Prediction Best Scores
 
 
