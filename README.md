@@ -1,12 +1,10 @@
-# Magnetic Anomaly Prediction
-
-## Overview
+# Overview
 
 This project aims to predict magnetic anomaly grids using geophysical predictor grids. This is an important component of the MagNav project, which develops military-grade navigation algorithms via magnetic navigation. Due to the lack of quality magnetic data, we leverage machine learning to enhance the accuracy of magnetic anomaly predictions. 
 
 This project builds on the methods of a research paper on prediction of in-situ heat flow {insert reference here}. Data from said paper was used as well as the feature ranking and modeling approaches. A random forest regressor is the inital model used to assess the performance of machine learning in the domain of geophysics. Random forest is simple in applcation, resistant to overfitting and provides model explainability, such as built in feature importance analysis. 
 
-## Table of Contents
+# Table of Contents
 
 - [Data](#data)
 - [Feature Ranking](#ranking)
@@ -16,7 +14,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [License](#license)
 
 
-## Data
+# Data
 * The majority of geophysical predictor data is sourced from paper on in-situ heatflow prediction {insert reference here}.
 
 * Other predictors are sourced from geological agencies and then adjusted to match the formatting of research paper data, which is in .nc file format at 100 km<sup>2</sup> resolution {add details about equal area grid}.
@@ -30,7 +28,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 
 
 
-## Ranking 
+# Ranking 
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor explains the variance in the model.
 
 ![image](https://github.com/user-attachments/assets/f344e73e-ef2b-4c36-81df-1cf90d0b771e)
@@ -51,11 +49,11 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 | gl_tot_sed_thick     | Row 3, Col 2 |
 
 
-## Benchmarks
+# Benchmarks
 Selecting for train/test data for chosen features and boundary boxes. A small dataset of size (36297 samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The smaller dataset is used to measure how much sample size improves model performance. The model was not trained on the entire globe mainly due to time to train taking too long for project time constraint.
 
 
-### Feature Selection 
+## Feature Selection 
 
 #### Predictors Trained On
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate k of kth best predictors that yielded best test}
@@ -75,10 +73,10 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 
 
 
-### Train/Test Grid Selection 
+## Train/Test Grid Selection 
 Grid selection notebook in ```prediction_evaluation/grid_selection.ipynb```. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
 
-#### Benchmark CSV Format 
+### Benchmark CSV Format 
 A row = sample, column = feature format allows for train/test data to be moved to the benchmark notebook. ```prediction_evaluation/random_forest_benchmark``` in one package and simplifies input to the model via pandas/Numpy compatibility.
 
 | Latitude       | Longitude      | Target         | Predictor 1     | Predictor 2     | ...  | Predictor n     |
@@ -90,13 +88,13 @@ A row = sample, column = feature format allows for train/test data to be moved t
 | Sample n, Latitude | Sample n, Longitude | Sample n, Target | Sample n, Predictor 1 | Sample n, Predictor 2 | ...  | Sample n, Predictor n |
 
 
-#### Small Benchmark Boundary Box
+### Small Benchmark Boundary Box
 Both boundary box sets are defined as list of tuples becuase```filter_by_boundary_boxes(df, boundary_boxes)``` using a list of tuples for boundary boxes.
 ```python
 boundary_box = [(-115,33,-83,43)]
 ```
 
-#### Large Benchmark Boundary Boxes 
+### Large Benchmark Boundary Boxes 
 
 ```python
 # Define the boundary boxes for selection
@@ -134,7 +132,7 @@ boundary_boxes = [
 ```
 
 
-## Model Training 
+# Model Training 
 
 A random forest regressor was trained on data with normalized features and median missing value imputation. The same training and hyperparameters were used for both benchmarks.
 ```python
@@ -169,11 +167,11 @@ y_pred = rf_model.predict(X_test)
 ```
 
 
-## Evaluation 
+# Evaluation 
 
-### Metrics 
+## Metrics 
 
-#### Explanation of Metrics
+### Explanation of Metrics
 
 - **Mean Squared Error (MSE)**: This metric measures the average squared difference between the predicted values and the actual values. It is useful for understanding the overall performance of the model. A lower MSE indicates better model performance.
 
@@ -186,7 +184,7 @@ y_pred = rf_model.predict(X_test)
 - **Coefficient of Variation of RMSE (CVRMSE)**: This metric is the RMSE divided by the mean of the observed data, expressed as a percentage. It provides a normalized measure of the prediction error, allowing for comparison across different datasets. A lower CVRMSE indicates better model performance.
 
   
-#### 1 Box Benchmark Metrics
+### 1 Box Benchmark Metrics
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
@@ -200,7 +198,7 @@ y_pred = rf_model.predict(X_test)
 
 ![download](https://github.com/user-attachments/assets/1baf5af3-51dd-45e9-873f-00a91bcbc1aa)
 
-#### 10 Box Benchmark Metrics
+### 10 Box Benchmark Metrics
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
@@ -219,7 +217,7 @@ y_pred = rf_model.predict(X_test)
 
 When we increased the scope of our test/train split there is an expected increase in performance measured by R<sup>2</sup> Score, which is to be expected in a data science / machine learning setting. Both models underestimate values in the upper percentiles of their distributions. This may be important in a geophysical or a statistical aspect. The larger benchmark has much larger upper values than the 1 box benchmark.
 
-### Testing Outside Training Box Performance
+## Testing Outside Training Box Performance
 To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted for the 1 box dataset values,. 
 
 
@@ -240,7 +238,7 @@ In this comparison, the general "shape" of some areas is captured while other pa
 Spatial Heterogeneity = Different regions can have unique environmental characteristics, such as climate, soil type, vegetation, and topography. A model trained on data from one region may not capture the nuances of a different region.
 
 
-## Results 
+# Results 
 
 Due to the similarity in predictors and domain of research, an initial goal of this project was to exceed the R<sup>2</sup> score acheived by the research paper that we modeled our approach after. 
 
