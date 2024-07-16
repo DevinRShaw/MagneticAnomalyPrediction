@@ -21,6 +21,7 @@ The initial approach of this project follows this paper and many predictors used
 
 ## Standardized Data
 - Archive Name: `standardized_data.zip`
+  
 File standardization involves renaming all files to intuitive naming and formatted .nc files to have same xarray metadata and variable naming. This makes the data easier to use for future work.
 
 ## Benchmark Data
