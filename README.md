@@ -20,7 +20,9 @@ This project builds on the methods of a research paper on prediction of in-situ 
 * The majority of geophysical predictor data is sourced from paper on in-situ heatflow prediction {insert reference here}.
 
 * Other predictors are sourced from geological agencies and then adjusted to match the formatting of research paper data, which is in .nc file format at 100 km<sup>2</sup> resolution {add details about equal area grid}.
-*    Notebooks used for standardizing datasets outside of the followed research paper are in the ```feature_creation/file_conversion/``` folder. 
+*    Notebooks used for standardizing datasets outside of the followed research paper are in the ```feature_creation/file_conversion/``` folder.
+
+  
   Additional information on data and sources is in ```metadata.txt```.
 
 ![MagneticAnomalyPredictionDataSourcesDiagram drawio](https://github.com/user-attachments/assets/9dadd186-dd41-44b4-924c-2f351adc67c3)
