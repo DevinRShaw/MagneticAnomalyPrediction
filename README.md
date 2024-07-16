@@ -8,7 +8,7 @@ This project aims to predict magnetic anomaly grids using geophysical predictor 
 
 - [Data](#data)
 - [Feature Ranking](#ranking)
-- [Benchmark Dataset](#benchmark)
+- [Benchmark Datasets](#benchmarks)
 - [Evaluation](#evaluation)
 - [Next Steps](#Next)
 - [License](#license)
@@ -41,8 +41,8 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 | gl_tot_sed_thick     | Row 3, Col 2 |
 
 
-## Benchmark 
-Selecting for train/test data on boundary boxes and for select features, a dataset of size 356911 samples is created for input to the model. 
+## Benchmarks
+Selecting for train/test data on boundary boxes and for select features. A small dataset of size ({} samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The smaller dataset is used to measure how much sample size improves model performance. 
 
 ### Train/Test Grid Selection 
 Grid selection notebook in ```prediction_evaluation/grid_selection.ipynb```. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
@@ -59,8 +59,13 @@ A row = sample, column = feature format allows for train/test data to be moved t
 | Sample n, Latitude | Sample n, Longitude | Sample n, Target | Sample n, Predictor 1 | Sample n, Predictor 2 | ...  | Sample n, Predictor n |
 
 
+#### Small Benchmark Boundary Box
+Both use list of tuples due to ```filter_by_boundary_boxes(df, boundary_boxes)``` using a list of tuples for boundary boxes.
+```python
+boundary_box = [(-115,33,-83,43)]
+```
 
-#### Benchmark Boundary Boxes 
+#### Large Benchmark Boundary Boxes 
 
 ```python
 # Define the boundary boxes for selection
@@ -125,7 +130,7 @@ def filter_by_boundary_boxes(df, boundary_boxes):
 ### Feature Selection 
 
 #### Predictors Trained 
-Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate description of predictors that yielded best test}
+Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate k of kth best predictors that yielded best test}
 
 * cm_curie_point_depth   
 * wgm2012_freeair_ponc   
@@ -140,9 +145,37 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 
 
 ## Model Training 
+```python
+# Columns to exclude
+exclude_columns = ['Longitude', 'Latitude', 'EMAG2v3']
 
+# Target data
+y = data['EMAG2v3']
 
+# Select columns not in exclude_columns using boolean indexing
+X = data.loc[:, ~data.columns.isin(exclude_columns)]
 
+# Normalize the features
+scaler = preprocessing.StandardScaler()
+X = scaler.fit_transform(X)
+
+# Imputate missing values 
+X = X.fillna(X.median())
+y = y.fillna(y.median())
+
+# Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Initialize Random Forest model
+rf_model = RandomForestRegressor(n_estimators=300, random_state=42)
+
+# Train the model
+rf_model.fit(X_train, y_train)
+
+# Predict on test data
+y_pred = rf_model.predict(X_test)
+
+```
 
 
 ## Evaluation 
