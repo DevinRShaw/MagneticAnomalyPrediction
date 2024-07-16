@@ -39,7 +39,8 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 | gl_tot_sed_thick     | Row 3, Col 2 |
 
 
-## Modeling 
+## Benchmark Dataset  
+Selecting for train/test data on boundary boxes and for select features, a dataset of size 356911 samples is created for input to the model. 
 
 ### Train/Test Grid Selection 
 Grid selection notebook in ```prediction_evaluation/grid_selection.ipynb```. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
@@ -133,6 +134,14 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 * igrf_dec             
 * love_phase            
 * gl_tot_sed_thick     
+
+
+
+## Model Training 
+
+
+
+
 
 ## Evaluation 
 
