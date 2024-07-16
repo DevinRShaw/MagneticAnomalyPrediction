@@ -84,7 +84,7 @@ def filter_by_boundary_boxes(df, boundary_boxes):
     return filtered_df
 ```
 
-### Model Training 
+### Feature Selection 
 
 #### Predictors Trained 
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor explains the variance in the model. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. 
