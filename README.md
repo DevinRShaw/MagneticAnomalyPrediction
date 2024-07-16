@@ -238,8 +238,8 @@ When we increased the sample size of our test/train split there is an expected i
 ### Testing Outside Training Box Performance
 To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted,(y_pred), for the 1 box dataset values, (y_test). 
 
-![image](https://github.com/user-attachments/assets/f5cca37f-4997-4d16-8c7e-213b7794a206)
+![download](https://github.com/user-attachments/assets/b1cb3026-c03f-480f-bc19-89e3ca6137f5)
+![download](https://github.com/user-attachments/assets/9dde65be-a2a3-4065-9a85-959270bd1078)
 
-![image](https://github.com/user-attachments/assets/e29a07ca-04ab-41d2-9cd3-c95631380f3d)
 
 
