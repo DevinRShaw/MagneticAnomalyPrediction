@@ -6,7 +6,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 
 # Table of Contents
 
-- [Data](#data)
+- [Data Sources and Format](#data-sources-and-format)
 - [Feature Ranking](#ranking)
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
@@ -16,11 +16,11 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Future Work](#future-work)
 
 
-# Data
+# Data Sources and Format
 * The majority of geophysical predictor data is sourced from a [paper on in-situ heatflow prediction](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GC010913).
 
 * Other predictors are sourced from geological agencies and then adjusted to match the formatting of research paper data, which is in .nc file format at 100 km<sup>2</sup> resolution {add details about equal area grid}.
-*    Notebooks used for standardizing datasets outside of the followed research paper are in the ```feature_creation/file_conversion/``` folder.
+* Notebooks used for standardizing datasets outside of the followed research paper are in the ```feature_creation/file_conversion/``` folder.
 
   
   Additional information on data and sources is in ```data/metadata.MD```.
@@ -59,7 +59,7 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 | standardized_sc_crust_age_100km^2.nc         | 39.76610350941027       | 2.8629047779405667e-10            |
 | standardized_igrf_inc_100km^2.nc             | 9.706479949891724       | 0.0018362026258532354             |
 
-
+---
 
 # Benchmarks
 Selecting for train/test data for chosen features and boundary boxes. A small dataset of size (36297 samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The smaller dataset is used to measure how much sample size improves model performance. The model was not trained on the entire globe mainly due to time to train taking too long for project time constraint.
@@ -252,6 +252,8 @@ In this comparison, the general "shape" of some areas is captured while other pa
 
 Spatial Heterogeneity = Different regions can have unique environmental characteristics, such as climate, soil type, vegetation, and topography. A model trained on data from one region may not capture the nuances of a different region.
 
+
+---
 
 # Conclusions  
 
