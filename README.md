@@ -35,18 +35,29 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 
 
 
-{Make sure to fill out with all values this table later}
-| Predictor | F-score | 
-|----------|----------|
-| cm_curie_point_depth | Row 1, Col 2 |
-| wgm2012_freeair_ponc | Row 2, Col 2 | 
-| gl_elevation | Row 3, Col 2 | 
-| rayleigh_group   | Row 1, Col 2 |
-| sc_crust_den    | Row 2, Col 2 | 
-| interpolated_bouguer    | Row 3, Col 2 |
-| igrf_dec                | Row 1, Col 2 |
-| love_phase  | Row 2, Col 2 | 
-| gl_tot_sed_thick     | Row 3, Col 2 |
+| Filename                                     | Value                   | P-value                           |
+|----------------------------------------------|-------------------------|-----------------------------------|
+| standardized_MF7_filled_EMAG.nc              | 795033843.8884015       | 0.0                               |
+| standardized_interpolated_mf7_100km^2.nc     | 1560109.7038581178      | 0.0                               |
+| standardized_interpolated_emm_100km^2.nc     | 157150.1145795856       | 0.0                               |
+| standardized_gl_tot_sed_thick_100km^2.nc     | 1405.0289900456914      | 1.843757556141502e-307            |
+| standardized_cm_curie_point_depth_100km^2.nc | 770.6934776005627       | 1.3027033330072561e-169           |
+| standardized_gl_elevation_100km^2.nc         | 765.3689621463677       | 1.8724119603386416e-168           |
+| standardized_interpolated_bouguer_100km^2.nc | 438.1094275812039       | 2.814682176817089e-97             |
+| standardized_sc_crust_vp_100km^2.nc          | 373.40984527966464      | 3.4066938689985076e-83            |
+| standardized_sc_crust_den_100km^2.nc         | 360.99844612470224      | 1.716200855210849e-80             |
+| standardized_igrf_dec_100km^2.nc             | 266.3216746121886       | 7.209559708682005e-60             |
+| standardized_sc_crust_vs_100km^2.nc          | 241.32763047829047      | 2.0244078772371743e-54            |
+| standardized_love_group_100km^2.nc           | 112.26114486580741      | 3.133831036455731e-26             |
+| standardized_love_phase_100km^2.nc           | 101.8480245635898       | 5.997566505014905e-24             |
+| standardized_rayleigh_group_100km^2.nc       | 75.50813975888067       | 3.639931384364718e-18             |
+| standardized_wgm2012_freeair_ponc_100km^2.nc | 55.661609512607626      | 8.609466400441216e-14             |
+| standardized_rayleigh_phase_100km^2.nc       | 54.23154043467896       | 1.7822622099189852e-13            |
+| standardized_sl_vgg_eot_100km^2.nc           | 47.026006314980975      | 7.005778545104857e-12             |
+| standardized_sc_crust_age_100km^2.nc         | 39.76610350941027       | 2.8629047779405667e-10            |
+| standardized_igrf_inc_100km^2.nc             | 9.706479949891724       | 0.0018362026258532354             |
+| standardized_interpolated_emag_from_csv.nc   | -4.29249195137668e+19   | 1.0                               |
+
 
 
 # Benchmarks
