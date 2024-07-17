@@ -11,8 +11,8 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
 - [Conclusions](#conclusions)
-- [How to Use ](#how-to-use-models)
-- [How to Train ](#how-to-train-models)
+- [Using Model](#using-model)
+- [Training Models](#training-models)
 - [Future Work](#future-work)
 
 
@@ -265,7 +265,7 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 ![image](https://github.com/user-attachments/assets/d2662a35-fdb7-47cf-9b25-5706f7a3dfe9)
 
 
-# How to Use Models 
+# Using Models 
 After training the model, we can save our trained model to a serialized format, pickle, that allows us to use the model in other programs. Model pickles are named respective to their training sets in ```trained_models/```.
 
 ## Saving Model to Pickle
@@ -282,7 +282,7 @@ with open('rf_model.pkl', 'rb') as f:
     rf_model = pickle.load(f)
 ```
 
-# How to Train Models 
+# Training Models 
 Training for this application is simplified via the ```regression_evaluation/grid_selection.ipynb``` notebook. 
 ## Process 
 * Download the Standardized Data release zip file, which contains all our predictors and target.
