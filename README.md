@@ -88,7 +88,7 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 Grid selection notebook in ```prediction_evaluation/grid_selection.ipynb```. Due to the size of our files and large areas of missing data, it is faster to train/test on boundary boxes. Takes .nc files and creates a CSV file where each (lat,lon) combination is represented in (row = sample) and (column = feature) format.
 
 ### Benchmark CSV Format 
-A row = sample, column = feature format allows for train/test data to be moved to the benchmark notebook. ```prediction_evaluation/random_forest_benchmark``` in one package and simplifies input to the model via pandas/Numpy compatibility.
+A row = sample, column = feature format allows for train/test data to be moved to the benchmark notebook, ```prediction_evaluation/random_forest_benchmark```, and simplifies input to the model via pandas/Numpy compatibility.
 
 #### Example of Format
 
