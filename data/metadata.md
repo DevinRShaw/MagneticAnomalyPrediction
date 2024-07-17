@@ -1,5 +1,5 @@
 # Metadata for Magnetic Anomaly Prediction 
-**Data can be downloaded as zip files in the [source data release](https://github.com/DevinRShaw/MagneticAnomalyPrediction/releases)**
+**Data can be downloaded as zip files in the [source data releases](https://github.com/DevinRShaw/MagneticAnomalyPrediction/releases)**
 ## Data Overview
 Data contains global geophysical variables and corresponding magnetic anomaly values used for predicting magnetic anomalies as part of the MagNav project. The data is divided into original and standardized versions, with each .nc file in either zip containing one predictor variable.
 
