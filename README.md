@@ -290,6 +290,9 @@ Training for this application is simplified via the ```regression_evaluation/gri
   - Select features to train model with
   - Create list of boundary boxes to sample
 * Download .csv benchmark dataset
+* Preprocess values for input to model (In benchmark) 
+  - Imputate missing values
+  - Normalize/Standardize values 
 * Input to model in benchmark notebook
 
 
