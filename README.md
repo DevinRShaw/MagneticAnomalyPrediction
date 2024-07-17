@@ -79,6 +79,8 @@ Grid selection notebook in ```prediction_evaluation/grid_selection.ipynb```. Due
 ### Benchmark CSV Format 
 A row = sample, column = feature format allows for train/test data to be moved to the benchmark notebook. ```prediction_evaluation/random_forest_benchmark``` in one package and simplifies input to the model via pandas/Numpy compatibility.
 
+#### Example of Format
+
 | Latitude       | Longitude      | Target         | Predictor 1     | Predictor 2     | ...  | Predictor n     |
 |----------------|----------------|----------------|-----------------|-----------------|------|-----------------|
 | Sample 1, Latitude | Sample 1, Longitude | Sample 1, Target | Sample 1, Predictor 1 | Sample 1, Predictor 2 | ...  | Sample 1, Predictor n |
