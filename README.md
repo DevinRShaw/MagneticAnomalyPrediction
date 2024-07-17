@@ -15,7 +15,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 
 
 # Data
-* The majority of geophysical predictor data is sourced from paper on in-situ heatflow prediction {insert reference here}.
+* The majority of geophysical predictor data is sourced from [paper on in-situ heatflow prediction](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GC010913).
 
 * Other predictors are sourced from geological agencies and then adjusted to match the formatting of research paper data, which is in .nc file format at 100 km<sup>2</sup> resolution {add details about equal area grid}.
 *    Notebooks used for standardizing datasets outside of the followed research paper are in the ```feature_creation/file_conversion/``` folder.
