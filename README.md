@@ -265,11 +265,20 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 
 
 # How to Use 
+After training the model, we can save our trained model to a serialized format, pickle, that allows us to use the model in other programs. Model pickles are named respective to their training sets in ```trained_models/```.
+
+## Saving Model to Pickle
 ```python
 #saving to serialized format 
 import pickle
 with open('rf_model.pkl', 'wb') as f:
     pickle.dump(rf_model, f)
+```
+## Loading Model from Pickle 
+```python
+#loading from serialized format
+with open('rf_model.pkl', 'rb') as f:
+    rf_model = pickle.load(f)
 ```
 
 # Future Work
