@@ -68,17 +68,18 @@ Selecting for train/test data for chosen features and boundary boxes. A small da
 #### Predictors Trained On
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate k of kth best predictors that yielded best test}
 
-| Predictors| 
-|----------|
-| cm_curie_point_depth | 
-| wgm2012_freeair_ponc | 
-| gl_elevation | 
-| rayleigh_group   | 
-| sc_crust_den    | 
-| interpolated_bouguer    |
-| igrf_dec                | 
-| love_phase  | 
-| gl_tot_sed_thick     | 
+| Predictors                  | Description                                                                            |
+|-----------------------------|----------------------------------------------------------------------------------------|
+| cm_curie_point_depth        | Depth to the Curie point, the temperature at which certain materials lose their permanent magnetic properties. |
+| wgm2012_freeair_ponc        | Free-air gravity anomalies from the WGM2012 gravity model, which measure variations in Earth's gravity field.   |
+| gl_elevation                | Elevation above sea level derived from global elevation datasets.                                            |
+| rayleigh_group              | Group velocity of Rayleigh waves, which are surface seismic waves that cause the ground to shake in an elliptical motion. |
+| sc_crust_den                | Density of the Earth's crust, typically measured in grams per cubic centimeter.                               |
+| interpolated_bouguer        | Bouguer gravity anomalies corrected for the gravitational effect of topography.                                |
+| igrf_dec                    | Magnetic declination from the International Geomagnetic Reference Field, indicating the angle between magnetic north and true north. |
+| love_phase                  | Phase velocity of Love waves, which are surface seismic waves that cause horizontal shifting of the Earth during an earthquake. |
+| gl_tot_sed_thick            | Total sediment thickness, which indicates the depth of sediment layers on the Earth's surface.                 |
+
 
 
 
