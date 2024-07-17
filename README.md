@@ -1,6 +1,6 @@
 # Overview
 
-This project aims to predict magnetic anomaly grids using geophysical predictor grids. This is an important component of the MagNav project, which develops military-grade navigation algorithms via magnetic navigation. Due to the lack of quality magnetic data, we leverage machine learning to enhance the accuracy of magnetic anomaly predictions. 
+This project aims to predict magnetic anomaly grids using geophysical predictor grids. This is an important component of the MagNav project, which develops military-grade navigation algorithms via magnetic navigation. Due to the lack of quality magnetic data, we leverage machine learning to enhance the accuracy of magnetic anomaly predictions. The goal is to explore the viability of machine learning for large scale geophysical modeling, and to develop the approach of creating such models. Results of random forest also provide oppurtunity to invesigate feature interactions for magnetism, which can contribute to the domain of geophysics. 
 
 This project builds on the methods of a [research paper on prediction of in-situ heat flow](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GC010913). Data from said paper was used as well as the feature ranking and modeling approaches. A random forest regressor is the inital model used to assess the performance of machine learning in the domain of geophysics. Random forest is simple in applcation, resistant to overfitting and provides model explainability, such as built in feature importance analysis. 
 
@@ -265,6 +265,7 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 
 ## Magnetic Anomaly Prediction Large Benchmark Scores 
 ![image](https://github.com/user-attachments/assets/d2662a35-fdb7-47cf-9b25-5706f7a3dfe9)
+
 
 
 # Using Models 
