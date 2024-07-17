@@ -11,8 +11,8 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
 - [Conclusions](#conclusions)
-- [How to Use Models](#how-to-use-models)
-- [How to Train Models](#how-to-train-models)
+- [How to Use ](#how-to-use-models)
+- [How to Train ](#how-to-train-models)
 - [Future Work](#future-work)
 
 
