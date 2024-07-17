@@ -29,7 +29,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 
 
 # Ranking 
-Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor explains the variance in the model.
+Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor linearly models a relationship to the target.
 
 ![image](https://github.com/user-attachments/assets/f344e73e-ef2b-4c36-81df-1cf90d0b771e)
 
@@ -56,7 +56,6 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 | standardized_sl_vgg_eot_100km^2.nc           | 47.026006314980975      | 7.005778545104857e-12             |
 | standardized_sc_crust_age_100km^2.nc         | 39.76610350941027       | 2.8629047779405667e-10            |
 | standardized_igrf_inc_100km^2.nc             | 9.706479949891724       | 0.0018362026258532354             |
-| standardized_interpolated_emag_from_csv.nc   | -4.29249195137668e+19   | 1.0                               |
 
 
 
