@@ -11,7 +11,8 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
 - [Conclusions](#conclusions)
-- [How to Use](#how-to-use)
+- [How to Use Models](#how-to-use-models)
+- [How to Train Models](#how-to-train-models)
 - [Future Work](#future-work)
 
 
@@ -280,6 +281,17 @@ with open('rf_model.pkl', 'wb') as f:
 with open('rf_model.pkl', 'rb') as f:
     rf_model = pickle.load(f)
 ```
+
+# How to Train 
+Training for this application is simplified via the ```regression_evaluation/grid_selection.ipynb``` notebook. 
+## Process 
+* Download the Standardized Data release zip file, which contains all our predictors and target.
+* Use files in ```grid_selection.ipynb```
+  - Select features to train model with
+  - Create list of boundary boxes to sample
+* Download .csv benchmark dataset
+* Input to model in benchmark notebook
+
 
 # Future Work
 There are many potential methods of improving the performance of random forest regression on magnetic anomaly values, given current state of model performance. 
