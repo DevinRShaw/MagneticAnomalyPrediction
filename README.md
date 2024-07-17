@@ -41,7 +41,6 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 
 | Filename                                     | Value                   | P-value                           |
 |----------------------------------------------|-------------------------|-----------------------------------|
-| standardized_MF7_filled_EMAG.nc              | 795033843.8884015       | 0.0                               |
 | standardized_interpolated_mf7_100km^2.nc     | 1560109.7038581178      | 0.0                               |
 | standardized_interpolated_emm_100km^2.nc     | 157150.1145795856       | 0.0                               |
 | standardized_gl_tot_sed_thick_100km^2.nc     | 1405.0289900456914      | 1.843757556141502e-307            |
