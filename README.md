@@ -11,6 +11,7 @@ This project builds on the methods of a research paper on prediction of in-situ 
 - [Benchmark Datasets](#benchmarks)
 - [Model Evaluation](#evaluation)
 - [Conclusions](#conclusions)
+- [How to Use](#how-to-use)
 - [Future Work](#future-work)
 
 
@@ -263,6 +264,13 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 ![image](https://github.com/user-attachments/assets/d2662a35-fdb7-47cf-9b25-5706f7a3dfe9)
 
 
+# How to Use 
+```python
+#saving to serialized format 
+import pickle
+with open('rf_model.pkl', 'wb') as f:
+    pickle.dump(rf_model, f)
+```
 
 # Future Work
 There are many potential methods of improving the performance of random forest regression on magnetic anomaly values, given current state of model performance. 
