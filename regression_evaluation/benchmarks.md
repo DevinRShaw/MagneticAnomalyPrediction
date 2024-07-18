@@ -176,18 +176,21 @@ To test the performance of the model on data from outside of the boundary boxes 
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 1570.834555212438       |
-| R<sup>2</sup> Score                  | 0.8477694942863158      |
-| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
-| Mean Absolute Error (MAE)            | 18.503679782716006      |
-| Coefficient of Variation of RMSE     | 0.3901672791427854      |
+| Mean Squared Error (MSE)             | 27117.272116792607      |
+| R<sup>2</sup> Score                  | -0.07991638520158695      |
+| Root Mean Squared Error (RMSE)       | 164.6732282940752      |
+| Mean Absolute Error (MAE)            |  123.45282760745039      |
+| Coefficient of Variation of RMSE     | 1.0391902545740057      |
 
 
-![download](https://github.com/user-attachments/assets/4367b390-2c45-4ace-b424-afbef582c933)
-![download](https://github.com/user-attachments/assets/799b8c34-4592-4203-9aa5-c7345491acfd)
+![download](https://github.com/user-attachments/assets/13fe0dc9-6a08-4fe5-9a02-c4ad338daa7f)
+
+![download](https://github.com/user-attachments/assets/dbded1a9-c5bf-41e1-a1fc-4ce0cd78fc8a)
 
 
-In this comparison, the general "shape" of some areas is captured while other parts are much less accurate than on the in-training box results. This indicates that the spatial aspect of this data is important to prediction. The predictions seem to have a much smaller absolute values on average. More analysis on which datapoints the model performs worse on is needed.
+
+
+In this comparison, the model has a negative R<sup>2</sup> Score, which means the model creates more variance than it explains. This may be due to testing outside of the training area and spatial heterogeneity. 
 
 Spatial Heterogeneity = Different regions can have unique environmental characteristics, such as climate, soil type, vegetation, and topography. A model trained on data from one region may not capture the nuances of a different region.
 
