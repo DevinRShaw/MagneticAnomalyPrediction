@@ -5,7 +5,6 @@ Data contains global geophysical variables and corresponding magnetic anomaly va
 
 Benchmark datasets are csv files created from the data in files for input to the model and are created with the `regression_evaluation/grid_selection.ipnb` notebook.
 ---
----
 ## Original Data Sources
 - Archive Name: `original_data.zip`
 ---
@@ -39,7 +38,6 @@ The initial approach of this project follows this paper and many predictors used
 * Magnetic Field Model 
   - [link to data](https://geomag.colorado.edu/magnetic-field-model-mf7.html)
   -  `interpolated_MF7_from_csv.nc` is the new resolution data, created as csv via Oasis Montaj then converted to .nc 
----
 ---
 
 ## Standardized Data
