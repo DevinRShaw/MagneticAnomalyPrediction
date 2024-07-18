@@ -15,12 +15,16 @@ The initial approach of this project follows this paper and many predictors used
 ### National Oceanic and Atmospheric Administration (NOAA)
 * Earth Magnetic Anomaly Grid (EMAG2 v3, Meyer et al., 2017, 2 arc-minute equiangular grid)
   - [link to data](https://www.ncei.noaa.gov/products/earth-magnetic-model-anomaly-grid-2)
-  - `EMAG2v3onPredictorMesh.csv` or `interpolated_emag_from_csv.nc` converted to csv then interpolated to new resolution CSV via Oasis Montaj
+  - `EMAG2v3onPredictorMesh.csv` or `interpolated_emag_from_csv.nc` is the new resolution data, created as csv via Oasis Montaj then converted to .nc
+
+* Enhanced Magnetic Model (EMM)
+  - [link to data](https://www.ncei.noaa.gov/products/enhanced-magnetic-model)
+  - `interpolated_EMM_from_csv.nc` cis the new resolution data, created as csv via Oasis Montaj then converted to .nc
   
 ### International Gravimetric Bureau (BGI)
 * Bouguer Gravity Anomaly
   - [link to data](https://bgi.obs-mip.fr/catalogue/?uuid=df2dab2d-a826-4776-b49f-61e8b284c409)
-  - `interpolated_bouguer_from_csv.nc` converted to csv then interpolated to new resolution CSV via Oasis Montaj
+  - `interpolated_bouguer_from_csv.nc` is the new resolution data, created as csv via Oasis Montaj then converted to .nc
 
  
 ### Magnetic Declination/Inclination, EMM, MF7 Sources
