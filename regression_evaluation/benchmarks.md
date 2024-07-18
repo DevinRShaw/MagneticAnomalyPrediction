@@ -18,13 +18,13 @@ A row = sample, column = feature format allows for train/test data to be moved t
 
 
 # Small/Large Benchmarks 
-Selecting for train/test data for chosen features and boundary boxes. A small dataset of size (36297 samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The smaller dataset is used to measure how much sample size improves model performance. The model was not trained on the entire globe mainly due to time to train taking too long for project time constraint.
+The first benchmark tests if there is a difference in model performance as training size increases. A small dataset of size (36297 samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The smaller dataset is used to measure how much sample size improves model performance. The model was not trained on the entire globe mainly due to time to train taking too long for project time constraint.
 
 
 ## Feature Selection 
 
 ### Predictors Trained On
-Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate k of kth best predictors that yielded best test}
+Predictors were selected based on f-score rankings from ```feature_ranking.ipynb``` and domain knowledge of geophysical variables. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate k of kth best predictors that yielded best test}
 
 | Predictors                  | Description                                                                            |
 |-----------------------------|----------------------------------------------------------------------------------------|
@@ -196,4 +196,41 @@ Spatial Heterogeneity = Different regions can have unique environmental characte
 ---
 
 # Region/Hole Benchmarks 
-After initial 
+In the Small/Large Benchmark, the model was able to accurately predict test samples geographically in the training set, but failed to predict for an area far away. To see if the model can accurately predict within the geographic area it is trained on, we are training on regions with areas/holes missing, then comparing model predictions of areas with the actual values in the area. The idea is that if area is important, the model will model the areas missing from training data well. Feature importance was also investigated in these benchmarks to see if feature contributions to random forest change by area. 
+
+For the first regions, 3 atlantic ocean regions were selected for training/testing. 
+
+## Region 1 Boxes 
+```python
+region = [(32, -58, 42, -48)]
+
+holes = [
+    (39,-56,40,-55),
+    (34,-53,35,-52),
+    (37,-50,38,-49)
+]
+```
+
+
+## Region 2 Boxes 
+```python
+region = [(38, -25, 48, -15)]
+
+holes = [
+    (39,-23,40,-22),
+    (42,-20, 43,-19),
+    (43,-17,44,-16)
+]
+
+```
+
+## Region 3 Boxes 
+```python
+region = [(65, 0, 75, 10)]
+
+holes = [
+    (67,3,68,4),
+    (71,7, 72,8),
+    (73,5,74,6)
+]
+```
