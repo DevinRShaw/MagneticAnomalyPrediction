@@ -8,7 +8,7 @@ Benchmark datasets are csv files created from the data in files for input to the
 ---
 ## Original Data Sources
 - Archive Name: `original_data.zip`
----
+
 ### [Predicting Marine In Situ Heat Flow Using a Geospatial Machine Learning Conformal Prediction](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GC010913)
 The initial approach of this project follows this paper and many predictors used in model are sourced from the paper's supplementary data.
 * Multiple predictors all of which are .nc files of 100 km<sup>2</sup> equal area resolution (EASE grid)
