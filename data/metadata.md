@@ -19,7 +19,12 @@ The initial approach of this project follows this paper and many predictors used
 
 * Enhanced Magnetic Model (EMM)
   - [link to data](https://www.ncei.noaa.gov/products/enhanced-magnetic-model)
-  - `interpolated_EMM_from_csv.nc` cis the new resolution data, created as csv via Oasis Montaj then converted to .nc
+  - `interpolated_EMM_from_csv.nc` is the new resolution data, created as csv via Oasis Montaj then converted to .nc
+
+* World Magnetic Model (Inclination and Declination)
+  - [link to data](https://www.ncei.noaa.gov/products/world-magnetic-model)
+  - `igrf_dec.nc` and `igrf_inc.nc` is the new resolution data, created as csv via Oasis Montaj then converted to .nc
+
   
 ### International Gravimetric Bureau (BGI)
 * Bouguer Gravity Anomaly
@@ -27,10 +32,11 @@ The initial approach of this project follows this paper and many predictors used
   - `interpolated_bouguer_from_csv.nc` is the new resolution data, created as csv via Oasis Montaj then converted to .nc
 
  
-### Magnetic Declination/Inclination, EMM, MF7 Sources
-* Magnetic Declination/Inclination 
-  - [link to data](https://bgi.obs-mip.fr/catalogue/?uuid=df2dab2d-a826-4776-b49f-61e8b284c409)
-  - `igrf_dec.nc` and `igrf_inc.nc` converted to an .nc file via {insert method used here}
+### Colorado Institute for Research of Environmental Sciences
+* Magnetic Field Model 
+  - [link to data](https://geomag.colorado.edu/magnetic-field-model-mf7.html)
+  -  `interpolated_MF7_from_csv.nc` is the new resolution data, created as csv via Oasis Montaj then converted to .nc 
+    
 
 ## Standardized Data
 - Archive Name: `standardized_data.zip`
