@@ -3,7 +3,8 @@
 ## Data Overview
 Data contains global geophysical variables and corresponding magnetic anomaly values used for predicting magnetic anomalies as part of the MagNav project. The data is divided into original and standardized versions, with each .nc file in either zip containing one predictor variable.
 
-Benchmark datasets are csv files created from the data in files for input to the model and are created with the `regression_evaluation/grid_selection.ipnb` notebook.
+Benchmark datasets are csv files created from the data in files for input to the model and are created with the `regression_evaluation/grid_selection.ipnb` notebook. For more info see `regression_evaluation/benchmark_creation.md`.
+
 ---
 ## Original Data Sources
 - Archive Name: `original_data.zip`
