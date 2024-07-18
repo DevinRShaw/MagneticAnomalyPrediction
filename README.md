@@ -278,7 +278,7 @@ import pickle
 with open('rf_model.pkl', 'wb') as f:
     pickle.dump(rf_model, f)
 ```
-## Loading Model from Pickle 
+### Loading Model from Pickle 
 ```python
 #loading from serialized format
 with open('rf_model.pkl', 'rb') as f:
