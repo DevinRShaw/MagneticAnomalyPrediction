@@ -148,15 +148,9 @@ Training for this application is simplified via the ```regression_evaluation/gri
 # Future Work
 There are many potential methods of improving the performance of random forest regression on magnetic anomaly values, given current state of model performance. 
 
-* Feature Importance Analysis
-  - Identifying the best performing feature combination will increase model explainability and is most likely the simpliest approach.
- 
-* Training Set Selection
-  - Including data from various regions with different characteristics can help the model learn a more diverse set of patterns and relationships.
-  - This has been shown to be important by testing on data outside of training box
-    
 * Spatial Features
   - Include spatial information as features in your model. This can help the model learn spatial dependencies and improve its generalization to new areas.
+  - Latitude and Longitude were ranked highly in regional benchmarking
 
 
 
