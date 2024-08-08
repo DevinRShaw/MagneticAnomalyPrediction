@@ -8,7 +8,7 @@ kmeans = KMeans(n_clusters=10, random_state=42)
 plot_df['cluster'] = kmeans.fit_predict(plot_df[['Latitude','Longitude']])
 ```
 
-Clustering on Bouguer feature, increased R Squared score by 0.02
+Clustering on Bouguer feature, which increased R Squared score of orignal experiment by 0.02
 ```python
 kmeans = KMeans(n_clusters=10, random_state=42)
 plot_df['cluster'] = kmeans.fit_predict(plot_df[['Latitude','Longitude','6_interpolated_bouguer_']])
