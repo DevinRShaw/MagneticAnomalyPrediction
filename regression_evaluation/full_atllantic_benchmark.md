@@ -138,6 +138,8 @@ y_pred = rf_model.predict(X_test)
 | Root Mean Squared Error (RMSE)       | 19.0063550283213      |
 | Mean Absolute Error (MAE)            | 14.251835213255994      |
 | Coefficient of Variation of RMSE     | 0.3798681453991826      |
+
+
 ![download](https://github.com/user-attachments/assets/97bf1b5c-2933-4c63-a7af-d9d2e8f06e65)
 
 
@@ -151,6 +153,8 @@ y_pred = rf_model.predict(X_test)
 | Root Mean Squared Error (RMSE)       | 29.491239250020655      |
 | Mean Absolute Error (MAE)            |  23.3826499829736      |
 | Coefficient of Variation of RMSE     | 0.5047326776289702      |
+
+
 ![download](https://github.com/user-attachments/assets/9a92e420-dde7-4b13-a704-98f2600f7be1)
 
 | Predicted               | Actual                |
