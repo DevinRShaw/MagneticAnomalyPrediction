@@ -56,34 +56,53 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 
 A random forest regressor was trained on data with normalized features and median missing value imputation. The same training and hyperparameters were used for both benchmarks.
 ```python
-# Columns to exclude
-exclude_columns = ['Longitude', 'Latitude', 'EMAG2v3']
+kmeans = KMeans(n_clusters=10, random_state=42)
+data['cluster'] = kmeans.fit_predict(data[['Latitude','Longitude']])
 
-# Target data
-y = data['EMAG2v3']
+# Columns to exclude
+exclude_columns = ['EMAG2v3','2_interpolated_emm_']
+include_columns = ['cluster','Longitude','Latitude']
+
+
+
+for column in data.columns:
+  if column in include_columns or column == 'EMAG2v3' or column in exclude_columns:
+    continue
+  try:
+    if 0 < int(column[0:2]) and int(column[0:2]) <= 10: #select 5 highest ranked
+      include_columns.append(column)
+  except:
+    if 0 < int(column[0]) and int(column[0]) <= 10: #select 5 highest ranked
+      include_columns.append(column)
+    continue
+
 
 # Select columns not in exclude_columns using boolean indexing
 X = data.loc[:, ~data.columns.isin(exclude_columns)]
+X = X.loc[:, X.columns.isin(include_columns)]
+
+X = X.fillna(X.median())
 
 # Normalize the features
 scaler = preprocessing.StandardScaler()
 X = scaler.fit_transform(X)
 
-# Imputate missing values 
-X = X.fillna(X.median())
-y = y.fillna(y.median())
 
+y = data['EMAG2v3']
+
+y = y.fillna(y.median())
 # Split data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
 
 # Initialize Random Forest model
-rf_model = RandomForestRegressor(n_estimators=300, random_state=42)
+rf_model = RandomForestRegressor(n_estimators=500, random_state=42,oob_score=True)
 
 # Train the model
 rf_model.fit(X_train, y_train)
 
 # Predict on test data
 y_pred = rf_model.predict(X_test)
+
 ```
 
 
