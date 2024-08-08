@@ -146,7 +146,7 @@ y_pred = rf_model.predict(X_test)
 When we increased the scope of our test/train split there is an expected increase in performance measured by all metrics other than R<sup>2</sup> Score. Despite this, R<sup>2</sup> score decreased indicating less variance explained, which may be a result of greater variance in larger set. Both models underestimate values in the upper percentiles of their distributions. This may be important in a geophysical or a statistical aspect. The larger benchmark has much larger upper values than the 1 box benchmark.
 
 ## Testing Outside Training Box Performance
-To test the performance of the model on data from outside of the boundary boxes used for training, the 10 box trained model predicted for the 1 box dataset values,. 
+To test the performance of the model on data from outside of the training regiong, the region trained model was tested against the test areas inside of the training region.
 
 
 | Metric                               | Value                   |
