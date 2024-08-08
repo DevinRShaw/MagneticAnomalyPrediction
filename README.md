@@ -32,7 +32,7 @@ This project builds on the methods of a [research paper on prediction of in-situ
 # Ranking 
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. F-score is a measure of how well the predictor linearly models a relationship to the target.
 
-![image](https://github.com/user-attachments/assets/f344e73e-ef2b-4c36-81df-1cf90d0b771e)
+![download](https://github.com/user-attachments/assets/955f8626-4eeb-4665-819c-adaca74ac168)
 
 
 
