@@ -134,11 +134,11 @@ y_pred = rf_model.predict(X_test)
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 1570.834555212438       |
-| R<sup>2</sup> Score                  | 0.8477694942863158      |
-| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
-| Mean Absolute Error (MAE)            | 18.503679782716006      |
-| Coefficient of Variation of RMSE     | 0.3901672791427854      |
+| Mean Squared Error (MSE)             | 360.88744031158797      |
+| R<sup>2</sup> Score                  | 0.8558416356622254      |
+| Root Mean Squared Error (RMSE)       | 18.997037672005284      |
+| Mean Absolute Error (MAE)            | 14.247927380499906      |
+| Coefficient of Variation of RMSE     | 0.3796819252186949      |
 
 
 ### Interpretation of Benchmark Performance
@@ -151,11 +151,11 @@ To test the performance of the model on data from outside of the training region
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 27117.272116792607      |
-| R<sup>2</sup> Score                  | -0.07991638520158695      |
-| Root Mean Squared Error (RMSE)       | 164.6732282940752      |
-| Mean Absolute Error (MAE)            |  123.45282760745039      |
-| Coefficient of Variation of RMSE     | 1.0391902545740057      |
+| Mean Squared Error (MSE)             | 1534.119617521569      |
+| R<sup>2</sup> Score                  | 0.550638330330105      |
+| Root Mean Squared Error (RMSE)       | 39.167839071380605      |
+| Mean Absolute Error (MAE)            |  30.619951680803073      |
+| Coefficient of Variation of RMSE     | 0.6703444410673479      |
 
 
 
