@@ -160,9 +160,7 @@ y_pred = rf_model.predict(X_test)
 | Predicted               | Actual                |
 |-----------------------|-----------------------|
 |  ![download](https://github.com/user-attachments/assets/f944e97d-1363-4f3c-81a7-8da9ab0cc1e1) | ![download](https://github.com/user-attachments/assets/ce702114-c59e-4b1e-954c-a96926a3c3ed) |
- 
 |  ![download](https://github.com/user-attachments/assets/b92f125b-968e-47fb-93f6-ef2fd55febe9) |![download](https://github.com/user-attachments/assets/37339c85-1a0c-4f53-bca7-2b0e03d0477a) |
-
 |![download](https://github.com/user-attachments/assets/e73e8024-cb21-4d3a-8a0a-d1d6ae1f3920) | ![download](https://github.com/user-attachments/assets/1e7fea86-570f-4dd0-916d-a442f673ec85) |
 
 
