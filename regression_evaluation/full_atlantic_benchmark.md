@@ -68,7 +68,7 @@ kmeans = KMeans(n_clusters=10, random_state=42)
 data['cluster'] = kmeans.fit_predict(data[['Latitude','Longitude']])
 
 # Columns to exclude
-exclude_columns = ['EMAG2v3','2_interpolated_emm_']
+exclude_columns = ['EMAG2v3']
 include_columns = ['cluster','Longitude','Latitude']
 
 
