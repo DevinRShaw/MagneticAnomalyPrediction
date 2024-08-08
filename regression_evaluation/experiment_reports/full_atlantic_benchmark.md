@@ -91,10 +91,6 @@ X = X.loc[:, X.columns.isin(include_columns)]
 
 X = X.fillna(X.median())
 
-# Normalize the features
-scaler = preprocessing.StandardScaler()
-X = scaler.fit_transform(X)
-
 
 y = data['EMAG2v3']
 
