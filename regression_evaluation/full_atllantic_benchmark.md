@@ -183,6 +183,8 @@ y_pred = rf_model.predict(X_test)
 | 5_gl_elevation_                | 0.0260     |
 | 8_sc_crust_den_                | 0.0115     |
 
+![download](https://github.com/user-attachments/assets/929911d8-9f25-4c59-b301-a38be414c4c2)
+
 
 
 
