@@ -114,10 +114,6 @@ y_pred = rf_model.predict(X_test)
 | Mean Absolute Error (MAE)            | 18.503679782716006      |
 | Coefficient of Variation of RMSE     | 0.3901672791427854      |
 
-**red line = line of perfect matching scores**
-![image](https://github.com/user-attachments/assets/3edd2c76-f660-417d-a6bc-96d2fa0b75bb)
-
-
 
 ### Interpretation of Benchmark Performance
 
