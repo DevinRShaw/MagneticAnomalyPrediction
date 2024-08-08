@@ -21,6 +21,9 @@ To see if the model can accurately predict within the geographic area it is trai
 
 Due to magnetic activity, an Atlantic regions, with 3 areas for testing was selected
 
+## Atlantic Training Region Plot 
+![download](https://github.com/user-attachments/assets/45d4d913-64b6-47f5-b344-f420da5b5719)
+
 ## Atlantic Region Boxes 
 ```python
 region = [(38, -25, 48, -15)]
