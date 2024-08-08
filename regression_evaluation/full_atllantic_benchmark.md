@@ -138,6 +138,7 @@ y_pred = rf_model.predict(X_test)
 | Root Mean Squared Error (RMSE)       | 19.0063550283213      |
 | Mean Absolute Error (MAE)            | 14.251835213255994      |
 | Coefficient of Variation of RMSE     | 0.3798681453991826      |
+![download](https://github.com/user-attachments/assets/97bf1b5c-2933-4c63-a7af-d9d2e8f06e65)
 
 
 ### Test Areas Performance
@@ -150,6 +151,19 @@ y_pred = rf_model.predict(X_test)
 | Root Mean Squared Error (RMSE)       | 29.491239250020655      |
 | Mean Absolute Error (MAE)            |  23.3826499829736      |
 | Coefficient of Variation of RMSE     | 0.5047326776289702      |
+![download](https://github.com/user-attachments/assets/9a92e420-dde7-4b13-a704-98f2600f7be1)
+
+| Predicted               | Actual                |
+|-----------------------|-----------------------|
+|  ![download](https://github.com/user-attachments/assets/f944e97d-1363-4f3c-81a7-8da9ab0cc1e1)
+  | ![download](https://github.com/user-attachments/assets/ce702114-c59e-4b1e-954c-a96926a3c3ed)
+ |
+|  ![download](https://github.com/user-attachments/assets/b92f125b-968e-47fb-93f6-ef2fd55febe9)
+ |![download](https://github.com/user-attachments/assets/37339c85-1a0c-4f53-bca7-2b0e03d0477a)
+  |
+|![download](https://github.com/user-attachments/assets/e73e8024-cb21-4d3a-8a0a-d1d6ae1f3920)
+ | ![download](https://github.com/user-attachments/assets/1e7fea86-570f-4dd0-916d-a442f673ec85)
+|
 
 
 ## Feature Importances 
