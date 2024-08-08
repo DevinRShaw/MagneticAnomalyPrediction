@@ -40,19 +40,21 @@ holes = [
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb``` and domain knowledge of geophysical variables. The goal of selecting features is to improve model performance without model overfitting. Simply choosing high ranked factors will not yield an optimal result due to learning training data too well to generalize. EMM and MF7 {insert scientific names here} were dropped due to having a much larger prediction power than other predictors, and their close domain relation to the target variable, both of which can cause overfitting. The next {insert the accurate k of kth best predictors that yielded best test}
 
 ```python
-['cluster',
- 'Longitude',
- 'Latitude',
- '3_gl_tot_sed_thick_',
- '10_sc_crust_vs_',
- '4_cm_curie_point_depth_',
- '1_interpolated_mf7_',
- '2_interpolated_emm_',
- '6_interpolated_bouguer_',
- '9__igrf_dec_',
- '5_gl_elevation_',
- '7_sc_crust_vp_',
- '8_sc_crust_den_']
+features = [
+    'cluster',                  # Cluster identifier grouping data points with similar properties.
+    'Longitude',                # Geographical coordinate specifying the east-west position.
+    'Latitude',                 # Geographical coordinate specifying the north-south position.
+    '3_gl_tot_sed_thick_',      # Total sediment thickness in the geological layer.
+    '10_sc_crust_vs_',          # Shear wave velocity in the crustal layer.
+    '4_cm_curie_point_depth_',  # Depth at which magnetic minerals lose their magnetism (Curie point).
+    '1_interpolated_mf7_',      # Interpolated magnetic field data from the MF7 model.
+    '2_interpolated_emm_',      # Interpolated magnetic field data from the EMM model.
+    '6_interpolated_bouguer_',  # Interpolated Bouguer gravity anomaly data.
+    '9__igrf_dec_',             # Declination (angle between magnetic north and true north) from the IGRF model.
+    '5_gl_elevation_',          # Elevation of the ground level relative to sea level.
+    '7_sc_crust_vp_',           # P-wave velocity in the crustal layer.
+    '8_sc_crust_den_'           # Density of the crustal layer.
+]
 ```
 
 
