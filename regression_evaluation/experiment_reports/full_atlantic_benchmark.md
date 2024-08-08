@@ -163,7 +163,7 @@ y_pred = rf_model.predict(X_test)
 |-----------------------|-----------------------|
 | ![download](https://github.com/user-attachments/assets/8cd221ff-1e97-4ba2-96d0-87032c431b19) | ![download](https://github.com/user-attachments/assets/81b8cf71-e5e7-47db-b9b8-aa2d6a724de5) |
 |  ![download](https://github.com/user-attachments/assets/25f64f8f-832c-48ef-8df3-d0e2e59f081d) |![download](https://github.com/user-attachments/assets/13c41aa0-01eb-4dc3-a4aa-eeb4023b0b3b) |
-|![download](https://github.com/user-attachments/assets/e73e8024-cb21-4d3a-8a0a-d1d6ae1f3920) | ![download](https://github.com/user-attachments/assets/1e7fea86-570f-4dd0-916d-a442f673ec85) |
+|![download](https://github.com/user-attachments/assets/b9bf3fc4-bcfc-47f0-ba20-a6eaf16a80b6) | ![download](https://github.com/user-attachments/assets/4518c349-eea4-4214-b253-fd709b6f6c35) |
 
 
 ## Feature Importances 
@@ -186,13 +186,6 @@ y_pred = rf_model.predict(X_test)
 | 8_sc_crust_den_                | 0.0115     |
 
 ![download](https://github.com/user-attachments/assets/929911d8-9f25-4c59-b301-a38be414c4c2)
-
-----
-
-
-
-
-
 
 
 
