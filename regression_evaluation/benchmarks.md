@@ -20,7 +20,7 @@ A row = sample, column = feature format allows for train/test data to be moved t
 # Region/Hole Benchmarks 
 To see if the model can accurately predict within the geographic area it is trained on, we are training on 10 x 10 degree regions with 1 x 1 degree areas/holes missing, then comparing model predictions of areas with the actual values in the area. The idea is that if area is important, the model will model the areas missing from training data well. Feature importance was also investigated in these benchmarks to see if feature contributions to random forest change by area. 
 
-Due to their magnetic activity, 3 Atlantic regions, with 3 areas for testing each 
+Due to magnetic activity, an Atlantic regions, with 3 areas for testing was selected
 
 ## Atlantic Region Boxes 
 ```python
