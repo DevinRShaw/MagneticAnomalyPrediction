@@ -140,7 +140,7 @@ y_pred = rf_model.predict(X_test)
 | Coefficient of Variation of RMSE     | 0.3796819252186949      |
 
 
-## Test Areas Performance
+### Test Areas Performance
 
 
 | Metric                               | Value                   |
@@ -152,10 +152,8 @@ y_pred = rf_model.predict(X_test)
 | Coefficient of Variation of RMSE     | 0.6703444410673479      |
 
 
-
 ### Interpretation of Benchmark Performance
 
-When we increased the scope of our test/train split there is an expected increase in performance measured by all metrics other than R<sup>2</sup> Score. Despite this, R<sup>2</sup> score decreased indicating less variance explained, which may be a result of greater variance in larger set. Both models underestimate values in the upper percentiles of their distributions. This may be important in a geophysical or a statistical aspect. The larger benchmark has much larger upper values than the 1 box benchmark.
 
 
 
