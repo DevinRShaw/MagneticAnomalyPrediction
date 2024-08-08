@@ -1,10 +1,5 @@
-
-# Feature Selection 
-## Feature Rankings
-![download](https://github.com/user-attachments/assets/81eb3a33-ef8f-4306-9ee1-61ced0643ccc)
-
-## Predictors Trained On
-Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. EMM was removed from selection to assess model performance without a highly important feature.
+# Predictors Trained On
+Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. EMM and MF7 were removed from selection to assess model performance without a highly important feature.
 
 ```python
 features = [
