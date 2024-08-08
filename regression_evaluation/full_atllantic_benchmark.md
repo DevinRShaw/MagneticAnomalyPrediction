@@ -133,11 +133,11 @@ y_pred = rf_model.predict(X_test)
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 360.88744031158797      |
-| R<sup>2</sup> Score                  | 0.8558416356622254      |
-| Root Mean Squared Error (RMSE)       | 18.997037672005284      |
-| Mean Absolute Error (MAE)            | 14.247927380499906      |
-| Coefficient of Variation of RMSE     | 0.3796819252186949      |
+| Mean Squared Error (MSE)             | 361.24153146259425      |
+| R<sup>2</sup> Score                  | 0.8557001921109855     |
+| Root Mean Squared Error (RMSE)       | 19.0063550283213      |
+| Mean Absolute Error (MAE)            | 14.251835213255994      |
+| Coefficient of Variation of RMSE     | 0.3798681453991826      |
 
 
 ### Test Areas Performance
@@ -145,14 +145,33 @@ y_pred = rf_model.predict(X_test)
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 1534.119617521569      |
-| R<sup>2</sup> Score                  | 0.550638330330105      |
-| Root Mean Squared Error (RMSE)       | 39.167839071380605      |
-| Mean Absolute Error (MAE)            |  30.619951680803073      |
-| Coefficient of Variation of RMSE     | 0.6703444410673479      |
+| Mean Squared Error (MSE)             | 869.7331925019588      |
+| R<sup>2</sup> Score                  | 0.74524492413349      |
+| Root Mean Squared Error (RMSE)       | 29.491239250020655      |
+| Mean Absolute Error (MAE)            |  23.3826499829736      |
+| Coefficient of Variation of RMSE     | 0.5047326776289702      |
 
 
-### Interpretation of Benchmark Performance
+## Feature Importances 
+
+### Random Forest Importances 
+| Feature                        | Importance |
+|--------------------------------|------------|
+| 1_interpolated_mf7_            | 0.3912     |
+| 6_interpolated_bouguer_        | 0.1651     |
+| 4_cm_curie_point_depth_        | 0.0728     |
+| 10_sc_crust_vs_                | 0.0582     |
+| Longitude                      | 0.0470     |
+| Latitude                       | 0.0460     |
+| cluster                        | 0.0415     |
+| 3_gl_tot_sed_thick_            | 0.0395     |
+| 9__igrf_dec_                   | 0.0375     |
+| 2_interpolated_emm_            | 0.0347     |
+| 7_sc_crust_vp_                 | 0.0290     |
+| 5_gl_elevation_                | 0.0260     |
+| 8_sc_crust_den_                | 0.0115     |
+
+
 
 
 
