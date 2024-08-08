@@ -1,6 +1,19 @@
 # Predictors Trained On
 Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. EMM and MF7 were removed from selection to assess model performance without a highly important feature.
 
+## Clustering
+Orignal cluster methodology, which was used for this experiment.
+```python
+kmeans = KMeans(n_clusters=10, random_state=42)
+plot_df['cluster'] = kmeans.fit_predict(plot_df[['Latitude','Longitude']])
+```
+
+Clustering on Bouguer feature, increased R Squared score by 0.02
+```python
+kmeans = KMeans(n_clusters=10, random_state=42)
+plot_df['cluster'] = kmeans.fit_predict(plot_df[['Latitude','Longitude','6_interpolated_bouguer_']])
+```
+
 ```python
 features = [
     'cluster',                  # Cluster identifier grouping data points with similar properties.
