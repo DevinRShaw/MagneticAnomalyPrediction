@@ -62,41 +62,7 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 
 # Benchmarks
 
-## Small/Large Benchmark
-Selecting for train/test data for chosen features and boundary boxes. A small dataset of size (36297 samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The goal is to see if the training size affects accuracy and to measure the performance of the model trained on large dataset somewhere outside of training. 
-### 1 Box Benchmark Metrics
-
-| Metric                               | Value                   |
-|--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             |  3698.262507041346      |
-| R<sup>2</sup> Score                  | 0.8499673466604034      |
-| Root Mean Squared Error (RMSE)       | 60.813341521752825      |
-| Mean Absolute Error (MAE)            | 41.11493823797806       |
-| Coefficient of Variation of RMSE     | 0.3873404876069588      |
-
-**red line = line of perfect matching scores**
-
-![download](https://github.com/user-attachments/assets/1baf5af3-51dd-45e9-873f-00a91bcbc1aa)
-
-### 10 Box Benchmark Metrics
-
-| Metric                               | Value                   |
-|--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 1570.834555212438       |
-| R<sup>2</sup> Score                  | 0.8477694942863158      |
-| Root Mean Squared Error (RMSE)       | 39.633755249943675      |
-| Mean Absolute Error (MAE)            | 18.503679782716006      |
-| Coefficient of Variation of RMSE     | 0.3901672791427854      |
-
-**red line = line of perfect matching scores**
-![image](https://github.com/user-attachments/assets/3edd2c76-f660-417d-a6bc-96d2fa0b75bb)
-
-
-
-## Region/Holes Benchmark 
-After the intial results of the Small/Large Benchmark, we trained the model on a small region (10 x 10 degrees) and tested the model's performance in predicting holes of the map (1 x 1 degrees). This tests if the model can accurately predict values outside of the training set that are spatially close to the training set. If model can accurately learn and then imputate values in an area, there are many possible applicaitons. 
-
-
+Results of various benchmarks can be found in ```regression_evaluation/``` as both notebooks and markdown files explaining the experimentaiton process.
 
 ---
 
