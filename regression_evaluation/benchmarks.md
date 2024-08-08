@@ -17,10 +17,21 @@ A row = sample, column = feature format allows for train/test data to be moved t
 
 
 
-# Small/Large Benchmarks 
-The first benchmark tests if there is a difference in model performance as training size increases. A small dataset of size (36297 samples, 1 box) and a large dataset of size (356911 samples, 10 boxes) are created for input to the model. The smaller dataset is used to measure how much sample size improves model performance. The model was not trained on the entire globe mainly due to time to train taking too long for project time constraint.
+# Region/Hole Benchmarks 
+In the Small/Large Benchmark, the model was able to accurately predict randomnly sampleed points in the training set (10 box training set), but the 10 box trained model failed to predict for an area far away (1 box training set). To see if the model can accurately predict within the geographic area it is trained on, we are training on 10 x 10 degree regions with 1 x 1 degree areas/holes missing, then comparing model predictions of areas with the actual values in the area. The idea is that if area is important, the model will model the areas missing from training data well. Feature importance was also investigated in these benchmarks to see if feature contributions to random forest change by area. 
 
+Due to their magnetic activity, 3 Atlantic regions, with 3 areas for testing each 
 
+## Atlantic Region Boxes 
+```python
+region = [(38, -25, 48, -15)]
+
+holes = [
+    (39,-23,40,-22),
+    (42,-20, 43,-19),
+    (43,-17,44,-16)
+]
+```
 ## Feature Selection 
 
 ### Predictors Trained On
@@ -39,49 +50,6 @@ Predictors were selected based on f-score rankings from ```feature_ranking.ipynb
 | gl_tot_sed_thick            | Total sediment thickness, which indicates the depth of sediment layers on the Earth's surface.                 |
 
 
-
-## Small Benchmark Boundary Box
-Both boundary box sets are defined as list of tuples becuase```filter_by_boundary_boxes(df, boundary_boxes)``` using a list of tuples for boundary boxes.
-```python
-boundary_box = [(-115,33,-83,43)]
-```
-
-## Large Benchmark Boundary Boxes 
-
-```python
-# Define the boundary boxes for selection
-boundary_boxes = [
-    # USA: (latitude range: 24N to 49N, longitude range: 125W to 66W)
-    (24, -125, 49, -66),    # Box 1: from (24N, 125W) to (49N, 66W)
-
-    # Brazil: (latitude range: 5N to 34S, longitude range: 74W to 35W)
-    (5, -74, -34, -35),     # Box 2: from (5N, 74W) to (34S, 35W)
-
-    # Australia: (latitude range: 10S to 44S, longitude range: 113E to 154E)
-    (-10, 113, -44, 154),   # Box 3: from (10S, 113E) to (44S, 154E)
-
-    # Canada: (latitude range: 49N to 83N, longitude range: 141W to 52W)
-    (49, -141, 83, -52),    # Box 4: from (49N, 141W) to (83N, 52W)
-
-    # Argentina: (latitude range: 22S to 55S, longitude range: 73W to 53W)
-    (-22, -73, -55, -53),   # Box 5: from (22S, 73W) to (55S, 53W)
-
-    # China: (latitude range: 18N to 53N, longitude range: 74E to 135E)
-    (18, 74, 53, 135),      # Box 6: from (18N, 74E) to (53N, 135E)
-
-    # Russia: (latitude range: 41N to 82N, longitude range: 30E to 180E)
-    (41, 30, 82, 180),      # Box 7: from (41N, 30E) to (82N, 180E)
-
-    # South Africa: (latitude range: 22S to 35S, longitude range: 16E to 33E)
-    (-22, 16, -35, 33),     # Box 8: from (22S, 16E) to (35S, 33E)
-
-    # India: (latitude range: 8N to 37N, longitude range: 68E to 97E)
-    (8, 68, 37, 97),        # Box 9: from (8N, 68E) to (37N, 97E)
-
-    # Greenland: (latitude range: 60N to 84N, longitude range: 20W to 75W)
-    (60, -75, 84, -20)      # Box 10: from (60N, 75W) to (84N, 20W)
-]
-```
 
 
 # Model Training 
@@ -135,22 +103,8 @@ y_pred = rf_model.predict(X_test)
 
 - **Coefficient of Variation of RMSE (CVRMSE)**: This metric is the RMSE divided by the mean of the observed data, expressed as a percentage. It provides a normalized measure of the prediction error, allowing for comparison across different datasets. A lower CVRMSE indicates better model performance.
 
-  
-### 1 Box Benchmark Metrics
 
-| Metric                               | Value                   |
-|--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             |  3698.262507041346      |
-| R<sup>2</sup> Score                  | 0.8499673466604034      |
-| Root Mean Squared Error (RMSE)       | 60.813341521752825      |
-| Mean Absolute Error (MAE)            | 41.11493823797806       |
-| Coefficient of Variation of RMSE     | 0.3873404876069588      |
-
-**red line = line of perfect matching scores**
-
-![download](https://github.com/user-attachments/assets/1baf5af3-51dd-45e9-873f-00a91bcbc1aa)
-
-### 10 Box Benchmark Metrics
+### Region Training Metrics
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
@@ -182,55 +136,10 @@ To test the performance of the model on data from outside of the boundary boxes 
 | Coefficient of Variation of RMSE     | 1.0391902545740057      |
 
 
-![download](https://github.com/user-attachments/assets/13fe0dc9-6a08-4fe5-9a02-c4ad338daa7f)
 
-![download](https://github.com/user-attachments/assets/dbded1a9-c5bf-41e1-a1fc-4ce0cd78fc8a)
-
-
-
-
-In this comparison, the model has a negative R<sup>2</sup> Score, which means the model creates more variance than it explains. This may be due to testing outside of the training area and spatial heterogeneity. 
-
-Spatial Heterogeneity = Different regions can have unique environmental characteristics, such as climate, soil type, vegetation, and topography. A model trained on data from one region may not capture the nuances of a different region.
 
 ---
 
-# Region/Hole Benchmarks 
-In the Small/Large Benchmark, the model was able to accurately predict randomnly sampleed points in the training set (10 box training set), but the 10 box trained model failed to predict for an area far away (1 box training set). To see if the model can accurately predict within the geographic area it is trained on, we are training on 10 x 10 degree regions with 1 x 1 degree areas/holes missing, then comparing model predictions of areas with the actual values in the area. The idea is that if area is important, the model will model the areas missing from training data well. Feature importance was also investigated in these benchmarks to see if feature contributions to random forest change by area. 
-
-Due to their magnetic activity, 3 Atlantic regions, with 3 areas for testing each 
-
-## Region 1 Boxes 
-```python
-region = [(32, -58, 42, -48)]
-
-holes = [
-    (39,-56,40,-55),
-    (34,-53,35,-52),
-    (37,-50,38,-49)
-]
-```
 
 
-## Region 2 Boxes 
-```python
-region = [(38, -25, 48, -15)]
 
-holes = [
-    (39,-23,40,-22),
-    (42,-20, 43,-19),
-    (43,-17,44,-16)
-]
-
-```
-
-## Region 3 Boxes 
-```python
-region = [(65, 0, 75, 10)]
-
-holes = [
-    (67,3,68,4),
-    (71,7, 72,8),
-    (73,5,74,6)
-]
-```
