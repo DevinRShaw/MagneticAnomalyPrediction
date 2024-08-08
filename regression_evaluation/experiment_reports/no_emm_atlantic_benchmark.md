@@ -80,23 +80,24 @@ features = [
 ## Feature Importances 
 
 ### Random Forest Importances 
-| Feature                        | Importance |
-|--------------------------------|------------|
-| 1_interpolated_mf7_            | 0.3912     |
-| 6_interpolated_bouguer_        | 0.1651     |
-| 4_cm_curie_point_depth_        | 0.0728     |
-| 10_sc_crust_vs_                | 0.0582     |
-| Longitude                      | 0.0470     |
-| Latitude                       | 0.0460     |
-| cluster                        | 0.0415     |
-| 3_gl_tot_sed_thick_            | 0.0395     |
-| 9__igrf_dec_                   | 0.0375     |
-| 2_interpolated_emm_            | 0.0347     |
-| 7_sc_crust_vp_                 | 0.0290     |
-| 5_gl_elevation_                | 0.0260     |
-| 8_sc_crust_den_                | 0.0115     |
+| Feature                          | Importance |
+|----------------------------------|------------|
+| 4_cm_curie_point_depth_          | 0.2174     |
+| 6_interpolated_bouguer_          | 0.1781     |
+| 10_sc_crust_vs_                  | 0.1309     |
+| 9__igrf_dec_                     | 0.0799     |
+| cluster                          | 0.0788     |
+| Longitude                        | 0.0741     |
+| Latitude                         | 0.0679     |
+| 1_interpolated_mf7_              | 0.0605     |
+| 3_gl_tot_sed_thick_              | 0.0358     |
+| 7_sc_crust_vp_                   | 0.0353     |
+| 5_gl_elevation_                  | 0.0329     |
+| 8_sc_crust_den_                  | 0.0084     |
 
-![download](https://github.com/user-attachments/assets/929911d8-9f25-4c59-b301-a38be414c4c2)
+
+
+![download](https://github.com/user-attachments/assets/6a303276-4fc7-4dc7-9763-0d0dfd8550fb)
 
 
 
