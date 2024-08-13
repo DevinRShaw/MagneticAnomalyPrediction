@@ -166,9 +166,10 @@ y_pred = rf_model.predict(X_test)
 
 
 
-| Predicted               | Actual                | EMM
-|-----------------------|-----------------------|-----------------------|
-| ![download](https://github.com/user-attachments/assets/4df2f625-46a1-4a29-a2c3-855265064242) | ![download](https://github.com/user-attachments/assets/2e20eab1-d601-4bc3-99ee-111b14a858f8)| ![image](https://github.com/user-attachments/assets/e97cc88b-8e48-44a4-ba93-2c52d684b624) |
+| Predicted               | Actual                | EMM                  | Cluster 
+|-----------------------|-----------------------|-----------------------|-----------------------|
+| ![download](https://github.com/user-attachments/assets/4df2f625-46a1-4a29-a2c3-855265064242) | ![download](https://github.com/user-attachments/assets/2e20eab1-d601-4bc3-99ee-111b14a858f8)| ![image](https://github.com/user-attachments/assets/e97cc88b-8e48-44a4-ba93-2c52d684b624) | ![download](https://github.com/user-attachments/assets/7b6af43a-2f9a-4a78-a4c0-661633d8228a) |
+
 
 
 
