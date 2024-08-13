@@ -37,7 +37,8 @@ adjacent_region = [(38, -14, 48, -4)] # region to test model
 ![download](https://github.com/user-attachments/assets/81eb3a33-ef8f-4306-9ee1-61ced0643ccc)
 
 ### Predictors Trained On
-Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```.
+Predictors were selected based on f-score rankings from ```feature_ranking.ipynb```. Features relating to 'crust' were dropped for this experiment.
+
 ```python
 features = [
     'cluster',                     # Cluster identifier grouping data points with similar properties. (e.g., curie and bouguer)
@@ -51,7 +52,13 @@ features = [
 ]
 ```
 
-
+## Clustering 
+```python
+kmeans = KMeans(n_clusters=10, random_state=42)
+cluster_features.append('6_interpolated_bouguer_')
+cluster_features.append('4_cm_curie_point_depth_')
+data['cluster'] = kmeans.fit_predict(data[cluster_features])
+```
 
 # Model Training 
 
