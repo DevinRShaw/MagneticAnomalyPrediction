@@ -191,7 +191,7 @@ y_pred = rf_model.predict(X_test)
 ![download](https://github.com/user-attachments/assets/bab6a42a-8cd3-43c2-9666-efc04548a17f)
 
 ## Cluster Analysis 
-
+Scatter plots and idstributions of features used for clustering, with data labeled by cluster assigned.
 ![download](https://github.com/user-attachments/assets/9ac390f5-7271-4d2a-a851-ef5272708b82)
 
 
