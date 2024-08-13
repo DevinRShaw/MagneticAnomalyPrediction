@@ -19,7 +19,7 @@ A row = sample, column = feature format allows for train/test data to be moved t
 # Region/Adjacent Benchmarks 
 To see if the model can accurately predict around the geographic area it is trained on, we are training on a 10 x 20 degree region, then testing model accuracy on an adjacent region to see if larger scale patterns are captured. Feature importance was also investigated in these benchmarks to see if feature contributions to random forest change by area. 
 
-Due to magnetic activity, an Atlantic region was selected
+Due to magnetic activity, an Atlantic region was selected.
 
 ## Atlantic Training Region Plot 
 ![download](https://github.com/user-attachments/assets/ef4459c0-5b45-4bec-b3f6-2b804ca00fb0)
