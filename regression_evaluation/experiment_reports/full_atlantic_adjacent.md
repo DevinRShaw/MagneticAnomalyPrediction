@@ -55,6 +55,7 @@ features = [
 ## Clustering 
 ```python
 kmeans = KMeans(n_clusters=10, random_state=42)
+cluster_features = []
 cluster_features.append('6_interpolated_bouguer_')
 cluster_features.append('4_cm_curie_point_depth_')
 data['cluster'] = kmeans.fit_predict(data[cluster_features])
