@@ -188,7 +188,11 @@ y_pred = rf_model.predict(X_test)
 | 4_cm_curie_point_depth_        | 0.0088     |
 
 
-
 ![download](https://github.com/user-attachments/assets/bab6a42a-8cd3-43c2-9666-efc04548a17f)
+
+## Cluster Analysis 
+
+![download](https://github.com/user-attachments/assets/9ac390f5-7271-4d2a-a851-ef5272708b82)
+
 
 
