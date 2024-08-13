@@ -191,10 +191,10 @@ y_pred = rf_model.predict(X_test)
 ![download](https://github.com/user-attachments/assets/bab6a42a-8cd3-43c2-9666-efc04548a17f)
 
 ## Cluster Analysis 
-Scatter plots and distributions of features used for clustering, with data labeled by kmeans cluster.
+Scatter plots and distributions of features used for clustering and target, with data labeled by kmeans cluster.
 
+![download](https://github.com/user-attachments/assets/224d4b30-d8f6-444d-8b38-a64e8ec74344)
 
-![download](https://github.com/user-attachments/assets/9ac390f5-7271-4d2a-a851-ef5272708b82)
 
 
 
