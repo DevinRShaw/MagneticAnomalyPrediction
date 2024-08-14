@@ -122,14 +122,16 @@ y_pred = rf_model.predict(X_test)
 
 | Metric                               | Value                   | 
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 494.58969802452384      |
-| R<sup>2</sup> Score                  | 0.8534914994737246     |
-| Root Mean Squared Error (RMSE)       | 22.239372698539047      |
-| Mean Absolute Error (MAE)            | 15.83382912088798      |
-| Coefficient of Variation of RMSE     | 0.38276428846781846      |
+| Mean Squared Error (MSE)             | 622.768309068896      |
+| R<sup>2</sup> Score                  | 0.8155221358200553     |
+| Root Mean Squared Error (RMSE)       | 24.955326266528672      |
+| Mean Absolute Error (MAE)            | 17.52843181008142      |
+| Coefficient of Variation of RMSE     | 0.4295088639131265      |
 
 
-![download](https://github.com/user-attachments/assets/3f750b6c-7d48-4b73-8fd4-c6fe691e29e7)
+![download](https://github.com/user-attachments/assets/f1a89f7d-cce1-43ed-9489-cbfdd24a7dfb)
+
+
 
 
 
@@ -138,11 +140,11 @@ y_pred = rf_model.predict(X_test)
 
 | Metric                               | Value                   |
 |--------------------------------------|-------------------------|
-| Mean Squared Error (MSE)             | 1576.0091947742508      |
-| R<sup>2</sup> Score                  | 0.18265654245555685      |
-| Root Mean Squared Error (RMSE)       | 39.69898228889817     |
-| Mean Absolute Error (MAE)            |  29.518793449805052      |
-| Coefficient of Variation of RMSE     | 0.9040704936809094      |
+| Mean Squared Error (MSE)             | 2630.7345995019846      |
+| R<sup>2</sup> Score                  | -0.3643408430410502      |
+| Root Mean Squared Error (RMSE)       | 51.290687259014035     |
+| Mean Absolute Error (MAE)            | 39.568679900454036      |
+| Coefficient of Variation of RMSE     | 1.1680500173541588      |
 
 ![download](https://github.com/user-attachments/assets/9155ac12-2ccd-4388-99c4-2489a46148bc)
 
@@ -150,7 +152,8 @@ y_pred = rf_model.predict(X_test)
 
 | Predicted               | Actual                | EMM                  | Cluster 
 |-----------------------|-----------------------|-----------------------|-----------------------|
-| ![download](https://github.com/user-attachments/assets/4df2f625-46a1-4a29-a2c3-855265064242) | ![download](https://github.com/user-attachments/assets/2e20eab1-d601-4bc3-99ee-111b14a858f8)| ![image](https://github.com/user-attachments/assets/e97cc88b-8e48-44a4-ba93-2c52d684b624) | ![download](https://github.com/user-attachments/assets/7b6af43a-2f9a-4a78-a4c0-661633d8228a) |
+| ![download](https://github.com/user-attachments/assets/6d8a1abf-76e6-4b17-847f-ebb5374b3d06)
+ |![download](https://github.com/user-attachments/assets/a8f02fcf-8bec-4a78-907c-c59be9a26ab7)| ![image](https://github.com/user-attachments/assets/e97cc88b-8e48-44a4-ba93-2c52d684b624) | ![download](https://github.com/user-attachments/assets/7b6af43a-2f9a-4a78-a4c0-661633d8228a) |
 
 
 
@@ -158,16 +161,16 @@ y_pred = rf_model.predict(X_test)
 ## Feature Importances 
 
 ### Random Forest Importances 
-| Feature                        | Importance |
-|--------------------------------|------------|
-| cluster                        | 0.3066     |
-| 3_gl_tot_sed_thick_            | 0.2630     |
-| 5_gl_elevation_                | 0.1142     |
-| 9__igrf_dec_                   | 0.1005     |
-| 1_interpolated_mf7_            | 0.0850     |
-| 2_interpolated_emm_            | 0.0648     |
-| 6_interpolated_bouguer_        | 0.0570     |
-| 4_cm_curie_point_depth_        | 0.0088     |
+| Feature                          | Importance |
+|----------------------------------|------------|
+| cluster                          | 0.3831     |
+| 5_gl_elevation_                  | 0.1688     |
+| 9__igrf_dec_                     | 0.1367     |
+| 1_interpolated_mf7_              | 0.1138     |
+| 3_gl_tot_sed_thick_              | 0.0928     |
+| 6_interpolated_bouguer_          | 0.0915     |
+| 4_cm_curie_point_depth_          | 0.0132     |
+
+![download](https://github.com/user-attachments/assets/48b9b6b6-67b1-4ea4-9218-bb8767663648)
 
 
-![download](https://github.com/user-attachments/assets/bab6a42a-8cd3-43c2-9666-efc04548a17f)
