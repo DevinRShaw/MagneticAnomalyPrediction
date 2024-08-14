@@ -154,8 +154,7 @@ y_pred = rf_model.predict(X_test)
 
 | Predicted               | Actual                | MF7                  | Cluster 
 |-----------------------|-----------------------|-----------------------|-----------------------|
-|![image](https://github.com/user-attachments/assets/f9238124-9c02-440c-b679-52a5b2c74dd6)|![download](https://github.com/user-attachments/assets/a8f02fcf-8bec-4a78-907c-c59be9a26ab7)| ![image](https://github.com/user-attachments/assets/11ab3ed5-8483-4209-afd4-8b25e8d6ecd2)
-| ![download](https://github.com/user-attachments/assets/7b6af43a-2f9a-4a78-a4c0-661633d8228a) |
+|![image](https://github.com/user-attachments/assets/f9238124-9c02-440c-b679-52a5b2c74dd6)|![download](https://github.com/user-attachments/assets/a8f02fcf-8bec-4a78-907c-c59be9a26ab7)| ![image](https://github.com/user-attachments/assets/11ab3ed5-8483-4209-afd4-8b25e8d6ecd2)| ![download](https://github.com/user-attachments/assets/7b6af43a-2f9a-4a78-a4c0-661633d8228a) |
 
 
 
