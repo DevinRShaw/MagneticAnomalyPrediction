@@ -4,4 +4,5 @@ The bar plot below illustrates the comparison between the "Fill" and "Adjacent" 
 
 This visualization helps in understanding the variations in "Fill" and "Adjacent" metrics under different conditions, with positive and negative values clearly differentiated by the horizontal line at y=0.
 
-![Uploading download.png…]()
+
+![download](https://github.com/user-attachments/assets/e617a21e-3949-4f36-b500-ac36e13e042d)
