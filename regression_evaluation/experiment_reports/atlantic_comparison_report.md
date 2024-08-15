@@ -12,4 +12,5 @@ This visualization helps in understanding the variations in "Fill" and "Adjacent
 
 The bar plot below illustrates the comparison between the "Fill" experiments and using MF7 values to fill in missing values in magnetic anomaly data.
 
-![download](https://github.com/user-attachments/assets/68a3461a-178f-43b3-bdb3-f4351ea32433)
+
+![download](https://github.com/user-attachments/assets/aed00820-a76a-46d2-9399-da4472ad7330)
