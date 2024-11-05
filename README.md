@@ -10,7 +10,7 @@ This project builds on the methods of a [research paper on prediction of in-situ
 
 - [Data Sources and Format](#data-sources-and-format)
 - [Feature Ranking](#ranking)
-- [Benchmark Datasets](#benchmarks)
+- [Benchmarks](#benchmarks)
 - [Model Evaluation](#evaluation)
 - [Results](#results)
 
