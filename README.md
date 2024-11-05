@@ -186,7 +186,7 @@ Due to the similarity in predictors and domain of research, an initial goal of t
 
 
 ## Magnetic Anomaly Predictions
-Results of various benchmarks can be found in ```regression_evaluation/experiment_reports``` as both notebooks and markdown files explaining the experimentaiton process.
+Results of various benchmarks can be found in ```regression_evaluation/experiment_reports``` as markdown files explaining the experimentaiton process.
 
 ### Fill vs Adjacent Use Case Comparison
 
