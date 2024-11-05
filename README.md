@@ -88,7 +88,7 @@ This visualization helps in understanding the variations in "Fill" and "Adjacent
 
 ### Fill Model vs MF7 Imputation Comparison 
 
-The bar plot below illustrates the comparison between the "Fill" experiments and using MF7 values to fill in missing values in magnetic anomaly data.
+The bar plot below illustrates the comparison between the "Fill" experiments and using MF7 values to fill in missing values in magnetic anomaly data. MF7 is the current method used by the CIRES team to imputate missing values in the EMAG model, which signifies that the filling algorithm created shows promise for use as a replacement technique moving forward. 
 
 
 ![download](https://github.com/user-attachments/assets/ae4de571-0859-43e8-9693-70090d663800)
