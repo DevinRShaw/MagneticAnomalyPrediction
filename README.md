@@ -1,6 +1,9 @@
 # Overview
 
-This is a National Oceanic Atmosphereic Association (NOAA) funded project, carried out at the Univeristy of Colorado Cooperative Institute for Research in Environmental Sciences (CIRES) lab. This project aims to regress magnetic anomaly grid values for use in another CIRES project, MagNav, which uses magnetism to navigate without GPS technology.
+This is a National Oceanic Atmosphereic Association (NOAA) funded project, carried out at the Univeristy of Colorado Cooperative Institute for Research in Environmental Sciences (CIRES) lab. This project aims to regress magnetic anomaly grid values for use in another CIRES project, MagNav, which uses magnetism to navigate without GPS technology. 
+
+A summary of the project that was presented at the American Geophyscial Union 2024 Conference:
+![Copy of Add a heading (1)](https://github.com/user-attachments/assets/e8d127dc-52ef-4125-b5bf-d02774f1369d)
 
 A major problem in the MagNav project is a lack of quality maps to train their algorithm with. Due to the lack of quality magnetic data and inaccuracies in traditional modeling, leveraging machine learning to enhance the accuracy of magnetic anomaly predictions may be a viable option. The goal is to explore the viability of machine learning for large scale geophysical modeling, and to develop the approach of creating such a model for improving MagNav maps. The idea is to prototype a model and evaluate the potential of machine learning methods for other geophysics applications. Results of random forest also provide oppurtunity to invesigate feature interactions for magnetism, which can contribute to the domain of geophysics. 
 
